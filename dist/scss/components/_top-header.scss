@@ -1,0 +1,186 @@
+.header {
+    background-color: white;
+    &__nav {
+        height: 100px;
+    }
+    &__social {
+        position: relative;
+        &::after {
+            right: -7px;
+        }
+        ul {
+            li {
+                transition: all 200ms ease-in-out;
+                &:hover {
+                    transform: translateY(-15%);
+                }
+                a {
+                    color: $text-color;
+
+                    i {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &__menu {
+        position: relative;
+    }
+    &__mobilemenu-btn {
+        @include transition-sm;
+        &:hover,
+        &:active,
+        &:focus {
+            width: 20px;
+            height: 20px;
+            background: rgba(232, 234, 237, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            padding: 20px;
+        }
+    }
+}
+
+// menu
+.nav_menu {
+}
+.nav_menu #logo {
+    color: white;
+}
+nav.nav_menu #container {
+    margin: 0 auto;
+    max-width: 890px;
+}
+
+nav.nav_menu .toggle,
+[id^='drop'] {
+    display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav.nav_menu {
+    margin: 0;
+    padding: 0 3rem;
+}
+
+nav.nav_menu #logo {
+    display: block;
+    padding: 0 30px;
+    padding-left: 0;
+    float: left;
+    font-size: 17px;
+    line-height: 50px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+   * we need to add a clear after the container. */
+
+nav.nav_menu:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+   * and adding "position:reltive" */
+nav.nav_menu ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav.nav_menu ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    transition: all 0.3s ease;
+}
+
+/* Styling the links */
+nav.nav_menu a {
+    display: block;
+    padding: 14px 15px;
+    color: $text-color;
+    line-height: 1.7;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav.nav_menu ul li ul li:hover {
+    background-color: #fff;
+}
+
+/* Background color change on Hover */
+nav.nav_menu a:hover {
+    color: $primary-color-dark;
+}
+
+/* Hide Dropdowns by Default
+   * and giving it a position of absolute */
+nav.nav_menu ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav.nav_menu a" */
+    top: 45px;
+    background-color: #fff;
+}
+
+nav.nav_menu ul ul li ul li {
+    background-color: #fff;
+}
+
+nav.nav_menu ul ul li a {
+    color: black;
+}
+
+nav.nav_menu ul ul li a:hover {
+    color: $primary-color-normal;
+}
+
+/* Display Dropdowns on Hover */
+nav.nav_menu ul li:hover > ul {
+    display: inherit;
+    z-index: 999;
+    border-top: 3px solid $primary-color-normal;
+    // box-shadow: 0px 4px 10px rgba(0, 0, 0, 22%);
+    box-shadow: -2px 2px 50px -25px rgb(0, 0, 0, 20%);
+    border-radius: 1px 1px 15px 15px;
+    padding-top: 15px;
+    margin-top: 10px;
+    transition: opacity 0.3s ease, top 0.3s ease, margin-top 0.3s ease, background-color 0.3s ease;
+}
+
+/* Fisrt Tier Dropdown */
+nav.nav_menu ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers	
+   * We move the 2nd and 3rd etc tier dropdowns to the left
+   * by the amount of the width of the first tier.
+  */
+nav.nav_menu ul ul ul {
+    position: absolute;
+    top: -60px;
+    /* has to be the same number as the "width" of "nav.nav_menu ul ul li" */
+    left: 170px;
+}
+
+/* Change ' +' in order to change the Dropdown symbol */
+nav.nav_menu li > a:after {
+    content: '    +';
+}
+
+nav.nav_menu li > a:only-child:after {
+    content: '';
+}

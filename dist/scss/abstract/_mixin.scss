@@ -1,0 +1,17 @@
+@mixin bigtext {
+    font-size: 62px;
+    line-height: 62px;
+    color: #171a1f;
+}
+
+@mixin transition-sm {
+    transition: all 300ms ease-in-out;
+}
+
+// @mixin hoverbtncolor {
+//     &:hover {
+//         background-color: $bg;
+//         box-shadow: 0 4px 10px rgba($color: #000000, $alpha: 0.5);
+//         color: #fff;
+//     }
+// }

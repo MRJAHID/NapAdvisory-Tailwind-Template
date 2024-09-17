@@ -1,0 +1,12 @@
+.button {
+    // border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff !important;
+    padding: 6px 15px;
+}
+.button_primary {
+    background-color: $primary-color-normal;
+}
+.button_secondary {
+    background-color: $secondary-color-normal;
+}
