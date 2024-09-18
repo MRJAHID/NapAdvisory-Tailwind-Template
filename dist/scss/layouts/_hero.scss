@@ -1,0 +1,36 @@
+.hero {
+    background-color: $primary-color-normal;
+    .hero__banner {
+        img {
+            border-radius: 0px 10px 10px 0px;
+        }
+        .hero__text-content {
+            h1 {
+                font-size: 36px;
+                color: #fff;
+                margin-bottom: 1rem;
+                font-family: 'Adamina', serif;
+            }
+            label {
+                background: #fff;
+                border-radius: 3px;
+                padding: 2px 12px;
+                font-size: $body-font-size;
+                color: $primary-color-normal;
+                margin-bottom: 6px;
+                font-family: 'Manrope', sans-serif;
+                font-weight: 600;
+                display: inline-block;
+            }
+            p {
+                color: white;
+                font-size: $body-font-size;
+                line-height: 26px;
+                margin-bottom: 12px;
+                margin-top: 12px;
+                font-weight: 400;
+                font-family: 'Manrope', sans-serif;
+            }
+        }
+    }
+}

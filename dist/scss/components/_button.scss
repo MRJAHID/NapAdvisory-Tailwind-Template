@@ -3,10 +3,28 @@
     border-radius: 20px;
     color: #fff !important;
     padding: 6px 15px;
+    font-weight: 500;
 }
 .button_primary {
     background-color: $primary-color-normal;
+    &:hover {
+        background-color: $primary-color-normal_hover;
+    }
 }
 .button_secondary {
     background-color: $secondary-color-normal;
+    &:hover {
+        background-color: $secondary-color-normal_hover;
+    }
+}
+
+.button_white {
+    background-color: #fff;
+    border: 1px solid $primary-color-normal;
+    color: #000 !important;
+    &:hover {
+        border: 1px solid $secondary-color-normal_hover;
+        background-color: $secondary-color-normal_hover;
+        color: #fff !important;
+    }
 }

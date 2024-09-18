@@ -11,7 +11,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Adamina&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Feather Icon -->
+        <link
+            href="
+        https://cdn.jsdelivr.net/npm/feather-icons-css@1.2.0/css/feather.min.css
+        "
             rel="stylesheet"
         />
 
@@ -40,8 +52,8 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li>
                                     <!-- First Tier Drop Down -->
-                                    <label for="drop-1" class="toggle">Pages</label>
-                                    <a href="#">Pages</a>
+                                    <label for="drop-1" class="toggle">Services</label>
+                                    <a href="#">Services</a>
                                     <input type="checkbox" id="drop-1" />
 
                                     <ul class="animate__animated animate__slideInUp">
@@ -52,8 +64,8 @@
                                 </li>
                                 <li>
                                     <!-- First Tier Drop Down -->
-                                    <label for="drop-2" class="toggle">Portfolios</label>
-                                    <a href="#">Portfolios</a>
+                                    <label for="drop-2" class="toggle">Publications</label>
+                                    <a href="#">Publications</a>
                                     <input type="checkbox" id="drop-2" />
                                     <ul class="animate__animated animate__slideInUp">
                                         <li><a href="#">Resources</a></li>
@@ -73,7 +85,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="products.html">Products</a></li>
+                                <li><a href="products.html">Contact Us</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -142,11 +154,110 @@
         </header>
         <!---------- Header || END -------------->
 
-        <!-- Main Content || START  -->
-        <!-- <main class="py-12 bg-gray-100"> -->
-        <!-- ======================== Small Cart:Begin ======================== -->
-        <!-- </main> -->
-        <!-- Main Content || END -->
+        <!---------- HERO SECTION || START -------------->
+        <section class="relative mb-10 hero">
+            <div class="mx-auto">
+                <div class="flex flex-col items-center justify-start hero__banner md:flex-row">
+                    <!-- Hero Image -->
+                    <div class="w-full md:w-1/2 hero__img">
+                        <div class="hero__banner-img">
+                            <img
+                                class="animate__animated animate__fadeInUpBig"
+                                src="./dist/images/heroimg.avif"
+                                alt="Hero Image"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Hero Text Content -->
+                    <div class="w-full md:w-1/2 hero__txt px-6">
+                        <div class="hero__text-content">
+                            <h1>
+                                Welcome Our NAP <br />
+                                Advisory And Solution <br />
+                                “NAP Partners”
+                            </h1>
+                            <label>
+                                <span>Day Visitors:422</span>
+                                <span class="px-1">|</span>
+                                <span>Total Visitors:5242</span>
+                            </label>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Vitae phasellus nunc mi
+                                lobortis. Velit massa consequat et fermentum orci vehicula interdum.
+                            </p>
+                            <button class="my-4">
+                                <a
+                                    href="#"
+                                    class="button button_secondary flex justify-center items-center"
+                                    >Online Advisor
+                                    <span class="pl-1 flex justify-center items-center"
+                                        ><i class="ft-arrow-right"></i> </span
+                                ></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------- HERO SECTION || END -------------->
+
+        <!-- ========= Main Content || START =========== -->
+        <main class="py-10">
+            <!---------- NAP_ACTIVITIES SECTION || START -------------->
+            <section class="napactivities py-1 px-5 mx-auto container">
+                <div class="napactivities_container flex items-center justify-between w-full">
+                    <!-- Text Content -->
+                    <div class="napactivities_text pt-2 px-4 w-1/2">
+                        <div class="napactivities_breadcrumb">
+                            <span>
+                                <i class="ft-command"></i>
+                            </span>
+                            <span>INTRODUCTION</span>
+                        </div>
+                        <h1>
+                            Startup “<span>NAP</span> <span>Partner</span>” <br />
+                            Activities
+                        </h1>
+                        <p>
+                            At NAP, we specialize in providing expert Tax and VAT advisory services
+                            to help your business stay compliant and optimize its financial
+                            strategy. With our experienced team of professionals, you can navigate
+                            the complexities of tax regulations with confidence. Founded in 2024,
+                            NAP was established with the goal of providing personalized and reliable
+                            tax and VAT advisory services to businesses of all sizes. Our founders,
+                            MD Nassim, Alamin and Pritam Das recognized the need for a firm that
+                            combines deep technical expertise with a commitment to exceptional
+                            client service. Over the years, we have grown into a trusted partner for
+                            businesses across various industries, known for our proactive approach
+                            and proven results. At NAP, our mission is to empower businesses with
+                            expert tax and VAT advisory services that ensure compliance, optimize
+                            financial strategies, and drive growth. We are dedicated to helping our
+                            clients navigate the complex world of tax regulations with confidence
+                            and clarity.
+                        </p>
+
+                        <!-- Button -->
+                        <button class="my-4">
+                            <a href="#" class="button button_white flex justify-center items-center"
+                                >Learn More
+                                <span class="pl-1 flex justify-center items-center"
+                                    ><i class="ft-arrow-right"></i> </span
+                            ></a>
+                        </button>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="napactivities_img px-2 w-1/2">
+                        <picture>
+                            <img src="./dist/images/activities.png" alt="Activities" />
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <!---------- NAP_ACTIVITIES SECTION || END -------------->
+        </main>
+        <!-- ========= Main Content || END =========== -->
 
         <!-- Footer Section || START -->
         <div class="footer"></div>

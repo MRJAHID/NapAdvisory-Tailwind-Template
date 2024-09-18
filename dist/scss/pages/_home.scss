@@ -1,0 +1,60 @@
+// ========= Nap Activities in Home Page
+.napactivities {
+    .napactivities_container {
+        .napactivities_text {
+            .napactivities_breadcrumb {
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                span:first-child {
+                    background: $primary-color-normal;
+                    padding: 6px 9px;
+                    color: #ffffffee;
+                    border-radius: 17px;
+                    margin-right: -7px;
+                    z-index: 1;
+                }
+                span:nth-child(2) {
+                    font-size: $extra_small-font;
+                    background: $primary-color-light;
+                    padding: 6px 13px;
+                    color: $primary-color-normal;
+                    border-radius: 0px 10px 10px 0px;
+                }
+            }
+            h1 {
+                font-weight: 400;
+                font-size: $medium-font-size;
+                font-family: 'Adamina', serif;
+                color: $dark-text-color;
+                line-height: 48px;
+                margin-bottom: 1rem;
+                span {
+                    color: $secondary-color-normal;
+                }
+                span:first-child {
+                    color: $primary-color-normal;
+                }
+            }
+            p {
+                font-size: 15px;
+                font-family: 'Manrope', sans-serif;
+                font-weight: 400;
+                color: $text-color;
+                line-height: 26px;
+                margin-bottom: 1rem;
+            }
+            button {
+                a {
+                    color: $text-color !important;
+                    &:hover {
+                        color: #ffffffee !important;
+                    }
+                }
+                i {
+                    color: $primary-color-normal;
+                }
+            }
+        }
+    }
+}
