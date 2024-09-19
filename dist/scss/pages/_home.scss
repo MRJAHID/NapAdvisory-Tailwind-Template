@@ -197,3 +197,61 @@
         }
     }
 }
+
+// ========= Nap CLIENT REVIEWS in Home Page
+.nap_reviews {
+    .nap_reviews-container {
+        .nap_reviews-content {
+            background-color: $primary-color-normal;
+            h2 {
+                font-weight: 400;
+                font-size: $medium-font-size;
+                font-family: 'Adamina', serif;
+                color: $dark-text-color;
+                line-height: 48px;
+            }
+
+            .nap_reviews-cards {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                .nap_reviews-card {
+                    background-color: #fff;
+                    img {
+                        height: 50px;
+                        width: 50px;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                    }
+                    .nap_reviews-name {
+                        font-size: $body-font-size;
+                        font-family: 'Manrope', sans-serif;
+                        font-weight: 500;
+                        color: $dark-text-color;
+                        line-height: 26px;
+                    }
+                    .nap_reviews-time {
+                        font-size: $extra_small-font;
+                        font-family: 'Manrope', sans-serif;
+                        font-weight: 400;
+                        color: $text-color;
+                    }
+                    .nap_reviews-desc {
+                        font-size: $body-font-size;
+                        font-family: 'Manrope', sans-serif;
+                        font-weight: 400;
+                        color: $text-color;
+                        line-height: 26px;
+                        padding-left: 8px;
+                    }
+                }
+            }
+            button {
+                a {
+                    border: 1px solid #fff;
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}
