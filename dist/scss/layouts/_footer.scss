@@ -1,0 +1,89 @@
+.footer {
+    background: #161d29;
+    border-radius: 35px 35px 0px 0px;
+
+    &__input {
+        height: 45px;
+        width: 100%;
+        border: 1px solid lightblue;
+        border-radius: 50px;
+        font-size: 14px;
+        padding: 0 15px;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        width: 30px;
+        height: 30;
+        height: 30px;
+        background-color: $primary-color-normal;
+        color: white;
+        border-radius: 50px;
+        right: 10px;
+        top: 8px;
+        .arrow-sm {
+            margin: 0 auto;
+        }
+    }
+    .arrow-sm {
+        width: 13px;
+        height: 13px;
+    }
+    &__box {
+        padding: 0 0 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        // @include breakpoint-down(small) {
+        //     align-items: flex-start;
+        // }
+
+        h4 {
+            font-family: 'Adamina', serif;
+        }
+
+        ul {
+            // padding-left: 25px;
+
+            // @include breakpoint-down(small) {
+            //     padding-left: 1px;
+            // }
+
+            li {
+                padding: 14px 0;
+                a {
+                    text-transform: capitalize;
+                    font-family: 'Manrope', sans-serif;
+                    align-items: center;
+                    font-size: 17px;
+                    color: #dbd7d7;
+                    @include transition-sm;
+                    &:hover {
+                        color: $primary-color-normal;
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+    }
+
+    &__social {
+        li {
+            padding: 0 10px;
+            a {
+                .footer__icon {
+                    width: 20px;
+                    height: 20px;
+                    @include transition-sm;
+                    &:hover {
+                        transform: translateY(-5px);
+                        color: $secondary-color-normal;
+                    }
+                }
+            }
+        }
+    }
+}
