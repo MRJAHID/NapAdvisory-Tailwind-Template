@@ -1,0 +1,88 @@
+.signup{
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  .left-panel {
+    background-color: #00b8d4;
+    flex: 1;
+    padding: 20px 2rem;
+    color: white;
+    border-radius: 1px 16px 16px 0;
+    h1{
+      color: white;
+    }
+    p{
+      font-weight: 300;
+      font-style: italic;
+      font-size: 14px;
+      font-family: Reddit sans;
+      color: #fff;
+      line-height: 27px;
+      margin-bottom: 8px;
+    }
+  }
+  .right-panel {
+    flex: 1;
+    padding: 40px;
+    background-color: white;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: $medium-font-size;
+    font-family: 'Adamina', serif;
+    color: $dark-text-color;
+    line-height: 48px;
+    margin-bottom: 1.8rem;
+    span{
+      color: $secondary-color-normal;
+    }
+  }
+  p{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Manrope', serif;
+    color: $text-color;
+    line-height: 27px;
+  }
+  .form-select{
+    background-color: $primary-color-light;
+    font-weight: 500;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 500;
+    font-family: 'Manrope', serif;
+    color: $dark-text-color;
+  }
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 11px;
+  }
+  button {
+    background-color: $secondary-color-normal;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    &:hover{
+      background-color: $secondary-color-normal_hover;
+    }
+  }
+  .login-link {
+    margin-top: 1.8rem;
+    text-align: center;
+    span{
+      color: $secondary-color-normal;
+      text-decoration: underline;
+    }
+  }
+}
