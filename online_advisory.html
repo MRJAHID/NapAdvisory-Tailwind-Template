@@ -1,427 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>NAP Advisory</title>
-        <!-- Favicon -->
-        <link rel="icon" href="./dist/images/logo1.png" sizes="any" />
-        <!-- Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NAP Advisory</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./dist/images/logo1.png" sizes="any"/>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
             href="https://fonts.googleapis.com/css2?family=Adamina&display=swap"
             rel="stylesheet"
-        />
-        <link
+    />
+    <link
             href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
-        />
+    />
 
-        <!-- Feather Icon -->
-        <link
+    <!-- Feather Icon -->
+    <link
             href="
         https://cdn.jsdelivr.net/npm/feather-icons-css@1.2.0/css/feather.min.css
         "
             rel="stylesheet"
-        />
+    />
 
-        <!-- Tailwind Css Pack -->
-        <link href="./dist/css/tailwind/tailwind.css" rel="stylesheet" />
+    <!-- Tailwind Css Pack -->
+    <link href="./dist/css/tailwind/tailwind.css" rel="stylesheet"/>
 
-        <!-- Main Css -->
-        <link rel="stylesheet" href="./dist/css/index.css" />
-    </head>
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./dist/css/index.css"/>
+</head>
 
-    <body class="antialiased">
-        <!-------- Header || START ---------->
-        <header class="header">
-            <div class="container px-6 mx-auto md:px-16">
-                <nav class="flex flex-row items-center justify-between header__nav">
-                    <!-- Logo -->
-                    <div class="header__logo">
-                        <img src="./dist/images/logo2.png" alt="Logo" />
-                    </div>
+<body class="antialiased">
+<!-------- Header || START ---------->
+<header class="header">
+    <div class="container px-6 mx-auto md:px-16">
+        <nav class="flex flex-row items-center justify-between header__nav">
+            <!-- Logo -->
+            <div class="header__logo">
+                <img src="./dist/images/logo2.png" alt="Logo"/>
+            </div>
 
-                    <!-- Header Nav Menu -->
-                    <div class="hidden header__menu md:inline-block">
-                        <nav class="nav_menu">
-                            <label for="drop" class="toggle">Home</label>
-                            <input type="checkbox" id="drop" />
-                            <ul class="menu">
-                                <li><a href="index.html">Home</a></li>
+            <!-- Header Nav Menu -->
+            <div class="hidden header__menu md:inline-block">
+                <nav class="nav_menu">
+                    <label for="drop" class="toggle">Home</label>
+                    <input type="checkbox" id="drop"/>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <!-- First Tier Drop Down -->
+                            <label for="drop-1" class="toggle">Services</label>
+                            <a href="#">Services</a>
+                            <input type="checkbox" id="drop-1"/>
+
+                            <ul class="animate__animated animate__slideInUp">
+                                <li><a href="#">Themes and stuff</a></li>
+                                <li><a href="#">Plugins</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- First Tier Drop Down -->
+                            <label for="drop-2" class="toggle">Publications</label>
+                            <a href="#">Publications</a>
+                            <input type="checkbox" id="drop-2"/>
+                            <ul class="animate__animated animate__slideInUp">
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Links</a></li>
                                 <li>
-                                    <!-- First Tier Drop Down -->
-                                    <label for="drop-1" class="toggle">Services</label>
-                                    <a href="#">Services</a>
-                                    <input type="checkbox" id="drop-1" />
+                                    <!-- Second Tier Drop Down -->
+                                    <label for="drop-3" class="toggle">Blogs</label>
+                                    <a href="#">Blogs</a>
+                                    <input type="checkbox" id="drop-3"/>
 
                                     <ul class="animate__animated animate__slideInUp">
-                                        <li><a href="#">Themes and stuff</a></li>
-                                        <li><a href="#">Plugins</a></li>
-                                        <li><a href="#">Tutorials</a></li>
+                                        <li><a href="#">HTML/CSS</a></li>
+                                        <li><a href="#">jQuery</a></li>
+                                        <li><a href="#">Other</a></li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <!-- First Tier Drop Down -->
-                                    <label for="drop-2" class="toggle">Publications</label>
-                                    <a href="#">Publications</a>
-                                    <input type="checkbox" id="drop-2" />
-                                    <ul class="animate__animated animate__slideInUp">
-                                        <li><a href="#">Resources</a></li>
-                                        <li><a href="#">Links</a></li>
-                                        <li>
-                                            <!-- Second Tier Drop Down -->
-                                            <label for="drop-3" class="toggle">Blogs</label>
-                                            <a href="#">Blogs</a>
-                                            <input type="checkbox" id="drop-3" />
-
-                                            <ul class="animate__animated animate__slideInUp">
-                                                <li><a href="#">HTML/CSS</a></li>
-                                                <li><a href="#">jQuery</a></li>
-                                                <li><a href="#">Other</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="products.html">Contact Us</a></li>
                             </ul>
-                        </nav>
-                    </div>
-
-                    <!-- Header Button -->
-                    <div class="header__btn">
-                        <!-- Mobile Menu btn start-->
-                        <div class="header__mobilemenu-btn md:hidden toggle-menu">
-                            <a href="#" class=""><i data-feather="menu"></i></a>
-                        </div>
-                        <!-- Mobile Menu btn end-->
-
-                        <div class="hidden header__social md:inline-block">
-                            <ul class="inline-flex">
-                                <li class="px-2">
-                                    <a href="login.html" class="button button_primary"> Login </a>
-                                </li>
-                                <li class="px-2">
-                                    <a href="#" class="button button_secondary"> Sign Up </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                        </li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="products.html">Contact Us</a></li>
+                    </ul>
                 </nav>
             </div>
-            <!-- Mobile Menu -->
-            <!-- <nav class="mobile__menu mobile__menu-left">
-                <div class="mobile__menu--head">
-                    <a href="#">
-                        <span>&nbsp;</span>
-                        <span
-                            class="close-menu"
-                            style="border-left: 1px solid #d1d8d8; padding-left: 12px"
-                            ><i data-feather="x" class="arrow-md"></i
-                        ></span>
-                    </a>
+
+            <!-- Header Button -->
+            <div class="header__btn">
+                <!-- Mobile Menu btn start-->
+                <div class="header__mobilemenu-btn md:hidden toggle-menu">
+                    <a href="#" class=""><i data-feather="menu"></i></a>
                 </div>
-                <div class="mobile__menu--main">
-                    <a href="index.html">
-                        <span>Home</span>
-                        <span><i data-feather="arrow-right" class="arrow-md"></i></span>
-                    </a>
-                    <a href="about-us.html"
-                        ><span>About</span>
-                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
-                    ></a>
-                    <a href="products.html"
-                        ><span>Products</span>
-                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
-                    ></a>
-                    <a href="#"
-                        ><span>Services</span>
-                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
-                    ></a>
-                    <a href="#"
-                        ><span>Clients</span>
-                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
-                    ></a>
-                    <a href="#"
-                        ><span>Contact</span>
-                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
-                    ></a>
+                <!-- Mobile Menu btn end-->
+
+                <div class="hidden header__social md:inline-block">
+                    <ul class="inline-flex">
+                        <li class="px-2">
+                            <a href="login.html" class="button button_primary"> Login </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="#" class="button button_secondary"> Sign Up </a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-            <div class="mobile__menu-overlay"></div> -->
-        </header>
-        <!---------- Header || END -------------->
-
-        <main class="mb-16">
-            <!-- Hero Section -->
-            <section
-                class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden"
-            >
-                <div class="absolute inset-0 bg-black opacity-50"></div>
-                <div
-                    class="absolute inset-0 bg-cover bg-center"
-                    style="
-                        background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-                    "
-                ></div>
-
-                <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
-                    <div class="flex flex-col md:flex-row items-center justify-between">
-                        <!-- Left Side: Company Info -->
-                        <div class="w-full md:w-1/2 mb-12 md:mb-0">
-                            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                                Innovate.<br />Transform.<br />Succeed.
-                            </h1>
-                            <p class="text-xl mb-8 text-gray-300">
-                                Empowering businesses with cutting-edge solutions for a digital
-                                future.
-                            </p>
-                            <div
-                                class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
-                            >
-                                <a
-                                    href="#"
-                                    class="bg-white text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center"
-                                    >Get Started</a
-                                >
-                                <a
-                                    href="#"
-                                    class="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 text-center"
-                                    >Learn More</a
-                                >
-                            </div>
-                        </div>
-
-                        <!-- Right Side: Features -->
-                        <div class="w-full md:w-1/2 md:pl-12">
-                            <div
-                                class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl"
-                            >
-                                <h2 class="text-2xl font-semibold mb-6">Why MyCompany?</h2>
-                                <ul class="space-y-4">
-                                    <li class="flex items-center">
-                                        <svg
-                                            class="w-6 h-6 mr-3 text-yellow-400"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="2"
-                                                d="M13 10V3L4 14h7v7l9-11h-7z"
-                                            ></path>
-                                        </svg>
-                                        <span>Lightning-fast Performance</span>
-                                    </li>
-                                    <li class="flex items-center">
-                                        <svg
-                                            class="w-6 h-6 mr-3 text-green-400"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="2"
-                                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                                            ></path>
-                                        </svg>
-                                        <span>Bank-grade Security</span>
-                                    </li>
-                                    <li class="flex items-center">
-                                        <svg
-                                            class="w-6 h-6 mr-3 text-purple-400"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="2"
-                                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-                                            ></path>
-                                        </svg>
-                                        <span>AI-powered Insights</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Decorative Element -->
-                <div class="absolute bottom-0 left-0 right-0">
-                    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
-                            fill="white"
-                        />
-                    </svg>
-                </div>
-            </section>
-
-            <!-- ... (rest of your main content) ... -->
-        </main>
-
-        <!-- Footer Section || START -->
-        <footer class="py-6 footer">
-            <div class="container px-6 mx-auto md:px-16 footer__container">
-                <div class="flex flex-wrap justify-center footer__wrapper">
-                    <div class="w-1/2 md:w-2/5">
-                        <!-- Footer Logo -->
-                        <img
-                            src="./dist/images/logo2.png"
-                            class="py-8 footer__logo"
-                            alt="Footer Logo"
-                        />
-
-                        <!-- Footer Social Media -->
-                        <div class="w-full flex items-center text-gray-300">
-                            <h3 class="font-medium text-xl">Follow: &nbsp;</h3>
-                            <ul class="flex justify-center md:justify-start footer__social">
-                                <li>
-                                    <a href="#">
-                                        <i class="footer__icon" data-feather="facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="footer__icon" data-feather="twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="footer__icon" data-feather="instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="footer__icon" data-feather="youtube"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Footer Company -->
-                    <div class="w-1/2 pt-6 md:pt-0 md:w-1/5">
-                        <div class="ml-12 footer__box md:ml-0">
-                            <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
-                                Company
-                            </h4>
-                            <ul>
-                                <li>
-                                    <a href="index.html" class="flex">Home</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html" class="flex">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex">Services</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Footer Publications -->
-                    <div class="flex justify-start w-1/2 md:w-1/5">
-                        <div class="footer__box">
-                            <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
-                                Publication
-                            </h4>
-                            <ul>
-                                <li>
-                                    <a href="#" class="flex">Blogs</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex">Resources</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Footer Contact -->
-                    <div class="w-1/2 md:w-1/5">
-                        <div class="ml-12 footer__box md:ml-0">
-                            <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
-                                Contact
-                            </h4>
-                            <ul>
-                                <li>
-                                    <a href="javascript:void()" class="flex">+8801632-541054</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex">+8801928-451320</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex">WhatsApp : +8801632-541054</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex">napadvisory@gmail.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="w-full footer__copyright">
-                    <div
-                        class="flex flex-col items-center pt-8 pb-6 text-center md:flex-row md:justify-between"
-                    >
-                        <div class="w-full md:w-1/2 text-start">
-                            <p
-                                class="pb-5 text-center md:pb-0 md:text-left"
-                                style="margin-bottom: 0"
-                            >
-                                © 2024 NAPAdvisory. All Rights Reserved.
-                            </p>
-                        </div>
-                        <div class="w-full md:w-1/2">
-                            <ul class="flex justify-center md:justify-end footer__social">
-                                <li>
-                                    <a href="#">
-                                        <i class="footer__icon" data-feather="facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="footer__icon" data-feather="twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="footer__icon" data-feather="instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="footer__icon" data-feather="youtube"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
             </div>
-        </footer>
-        <!-- Footer Section || END -->
+        </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <!-- <nav class="mobile__menu mobile__menu-left">
+        <div class="mobile__menu--head">
+            <a href="#">
+                <span>&nbsp;</span>
+                <span
+                    class="close-menu"
+                    style="border-left: 1px solid #d1d8d8; padding-left: 12px"
+                    ><i data-feather="x" class="arrow-md"></i
+                ></span>
+            </a>
+        </div>
+        <div class="mobile__menu--main">
+            <a href="index.html">
+                <span>Home</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span>
+            </a>
+            <a href="about-us.html"
+                ><span>About</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+            <a href="products.html"
+                ><span>Products</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+            <a href="#"
+                ><span>Services</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+            <a href="#"
+                ><span>Clients</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+            <a href="#"
+                ><span>Contact</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+        </div>
+    </nav>
+    <div class="mobile__menu-overlay"></div> -->
+</header>
+<!---------- Header || END -------------->
 
-        <!-- --------------   SCRIPTS --------------  -->
-        <!-- Feather Icon -->
-        <script src="https://unpkg.com/feather-icons"></script>
-        <script>
-            feather.replace();
-        </script>
-        <!-- Main JS -->
-        <script src="./app.js" type="text/javascript"></script>
-    </body>
+<main class="mb-16 online_advisor">
+    <!-------- HERO Section || START ---------->
+    <section class="page-title   crumbs-area-66f298550ac54 default-title"
+             style="background: url(./dist/images/call.jpg) center center/cover no-repeat local ;">
+        <div class="container">
+            <div class="row">
+                <div class="w-full">
+                    <div class="hero_title">
+                        <h2>Online Advisory Call Support</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------- HERO Section || END ---------->
+
+    <!-------- Online Advisor Section || START ---------->
+    <section class="online_advisory py-2 my-12 px-5 mx-auto container">
+        <div class="online_advisory-container flex justify-between items-start">
+            <div class="w-1/2 px-6 online_advisory_content">
+                <h4 class="">
+                    NAP provides Online Advisory <span>Income Tax Service</span>, <span>Value added Tax</span>, & <span>Regulatory</span>
+                    support services. Our services include 2 Session 30 min or 1 hour :
+                </h4>
+                <div class="online_advisory_content_supporttime">
+                    <p class="flex justify-start items-center mb-3">
+                        <span class="pr-2"><i data-feather="clock"></i></span>
+                        Support time 10 AM to 8 PM</p>
+
+                    <p class="flex justify-start items-center  mb-3">
+                        <span class="pr-2"><i data-feather="help-circle"></i></span> 30 min support Session Fee 200tk & 1 hour 250tk.
+                    </p>
+                </div>
+
+
+                <div class="p-4 rounded online_advisory_content_payment">
+                    <h3>Payment method:</h3>
+                    <ul>
+                        <li>Bkash & Nagad: Widely accepted, credit and debit cards offer convenience and security for
+                            both in-person and online transactions.
+                        </li>
+                        <li>Bank Transfers: Direct bank transfers (ACH, wire transfers) are secure and reliable,
+                            commonly used for larger transactions or recurring payments.
+                        </li>
+                        <li>Mobile Payment Apps: Apps like Apple Pay, Google Pay, and Samsung Pay allow users to make
+                            quick and secure payments using their smartphones.
+                        </li>
+                        <li>E-Wallets: Services like PayPal, Venmo, and Skrill store funds electronically and enable
+                            users to make payments online or transfer money to others.
+                        </li>
+                        <li>Cryptocurrencies: Bitcoin, Ethereum, and other cryptocurrencies offer decentralized payment
+                            options with potential for lower transaction fees and increased privacy.
+                        </li>
+                        <li>Checks: Although less common, checks are still used for specific transactions, especially in
+                            business-to-business payments or for larger amounts.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-1/2 px-6 online_advisory_form">
+                <h2>Appointment: </h2>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName">Fast Name</label>
+                            <input type="text" id="firstName" name="firstName" value="Mr" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" value="NAP" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" value="+880" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" value="nap@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentDate">Appointment Date</label>
+                            <input type="date" class="teal-button"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentTime">Appointment Time</label>
+                            <input type="time" class="teal-button"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="services">Services Name</label>
+                            <select id="services" name="services" required>
+                                <option value="income-tax">Income Tax Services</option>
+                                <option value="value-added-tax">Value Added Tax</option>
+                                <option value="regulatory">Regulatory</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description" rows="4" placeholder="Write note..."></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="paymentNumber">Payment Number</label>
+                            <input type="tel" id="paymentNumber" name="paymentNumber" value="+880" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="submit" class="purple-button">SUBMIT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <!-------- Online Advisor Section || END ---------->
+
+</main>
+
+<!-- Footer Section || START -->
+<footer class="py-6 footer">
+    <div class="container px-6 mx-auto md:px-16 footer__container">
+        <div class="flex flex-wrap justify-center footer__wrapper">
+            <div class="w-1/2 md:w-2/5">
+                <!-- Footer Logo -->
+                <img
+                        src="./dist/images/logo2.png"
+                        class="py-8 footer__logo"
+                        alt="Footer Logo"
+                />
+
+                <!-- Footer Social Media -->
+                <div class="w-full flex items-center text-gray-300">
+                    <h3 class="font-medium text-xl">Follow: &nbsp;</h3>
+                    <ul class="flex justify-center md:justify-start footer__social">
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Company -->
+            <div class="w-1/2 pt-6 md:pt-0 md:w-1/5">
+                <div class="ml-12 footer__box md:ml-0">
+                    <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
+                        Company
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="flex">Home</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html" class="flex">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Publications -->
+            <div class="flex justify-start w-1/2 md:w-1/5">
+                <div class="footer__box">
+                    <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
+                        Publication
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="#" class="flex">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">Resources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Contact -->
+            <div class="w-1/2 md:w-1/5">
+                <div class="ml-12 footer__box md:ml-0">
+                    <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
+                        Contact
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="javascript:void()" class="flex">+8801632-541054</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">+8801928-451320</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">WhatsApp : +8801632-541054</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">napadvisory@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="w-full footer__copyright">
+            <div
+                class="flex flex-col items-center pt-8 pb-6 text-center md:flex-row md:justify-between"
+            >
+                <div class="w-full md:w-1/2 text-start">
+                    <p
+                        class="pb-5 text-center md:pb-0 md:text-left"
+                        style="margin-bottom: 0"
+                    >
+                        © 2024 NAPAdvisory. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <ul class="flex justify-center md:justify-end footer__social">
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</footer>
+<!-- Footer Section || END -->
+
+<!-- --------------   SCRIPTS --------------  -->
+<!-- Feather Icon -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+    feather.replace();
+</script>
+<!-- Main JS -->
+<script src="./app.js" type="text/javascript"></script>
+</body>
 </html>

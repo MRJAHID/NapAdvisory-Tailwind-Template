@@ -149,8 +149,7 @@ nav.nav_menu ul li:hover > ul {
     display: inherit;
     z-index: 999;
     border-top: 3px solid $primary-color-normal;
-    // box-shadow: 0px 4px 10px rgba(0, 0, 0, 22%);
-    box-shadow: -2px 2px 50px -25px rgb(0, 0, 0, 20%);
+    box-shadow: -2px 2px 50px -25px rgba(0, 0, 0, 0.2);
     border-radius: 1px 1px 15px 15px;
     padding-top: 15px;
     margin-top: 10px;
@@ -165,7 +164,7 @@ nav.nav_menu ul ul li {
     position: relative;
 }
 
-/* Second, Third and more Tiers	
+/* Second, Third and more Tiers
    * We move the 2nd and 3rd etc tier dropdowns to the left
    * by the amount of the width of the first tier.
   */

@@ -1,41 +1,172 @@
-.advisory_hero {
-    margin-bottom: 1rem;
-    .hero {
-        background-image: url('https://images.pexels.com/photos/7709299/pexels-photo-7709299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        background-repeat: no-reapeat;
-        background-size: contain;
-        background-position: center;
-        text-align: center;
-        padding: 100px;
-        color: #fff;
+.online_advisor {
+  .page-title {
+    height: 400px;
+    text-align: center;
+    position: relative;
+    display: table;
+    width: 100%;
+    background: #c1b696;
+  }
+
+  @media (max-width: 991px) {
+    .page-title {
+      height: 350px;
     }
-    .hero-content {
-        padding: 100px;
-        margin-inline: auto;
+  }
+
+  .page-title .container {
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .page-title:before {
+    content: "";
+    background-color: rgba(25, 25, 25, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .page-title h2 {
+    font-size: 3.25rem;
+    margin: 0;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: 'Adamina', serif;
+  }
+
+  @media (max-width: 991px) {
+    .page-title h2 {
+      font-size: 2.5rem;
     }
-    .hero-title {
-        font-size: 60px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        text-transform: upperCase;
-        padding-bottom: 20px;
+  }
+
+  .hero_title {
+    position: absolute;
+    width: 100%;
+    top: 45%
+  }
+
+  //    Hero End
+}
+
+.online_advisory {
+  .online_advisory-container {
+    .online_advisory_content {
+      h4 {
+        font-size: 18px;
+        font-family: 'Adamina', serif;
+        font-weight: 400;
+        color: $dark-text-color;
+        line-height: 28px;
+        margin-bottom: 1rem;
+
+        span {
+          color: $secondary-color-normal
+        }
+      }
+
+      .online_advisory_content_supporttime {
+        padding: 10px 0;
+        p{
+          font-size: 16px;
+          font-family: 'Adamina', serif;
+          font-weight: 400;
+          color: $dark-text-color;
+          line-height: 28px;
+          span{
+            i{
+              fill: $secondary-color-dark;
+            }
+          }
+        }
+      }
+      .online_advisory_content_payment{
+        background-color: #F8F9FA;
+        h3{
+          font-size: 16px;
+          font-family: 'Manrope', sans-serif;
+          font-weight: 500;
+          color: $dark-text-color;
+          line-height: 28px;
+          margin-bottom: 1rem;
+        }
+        ul{
+          padding-left: 1rem;
+          li{
+            list-style: disc;
+            font-size: 16px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 400;
+            color: $text-color;
+            line-height: 26px;
+            margin-bottom: 6px;
+          }
+        }
+      }
     }
-    .hero-description {
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-    .hero-button {
-        background-color: #ff6600;
-        padding: 20px;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 10px;
-        text-transform: uppercase;
-        font-size: 24px;
-        font-weight: bold;
+
+    .online_advisory_form {
+     h2{
+       font-weight: 400;
+       font-size: 18px;
+       font-family: 'Adamina', serif;
+       color: $dark-text-color;
+       margin-bottom: 1.5rem;
+     }
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 15px;
+        font-family: 'Manrope', serif;
+        color: $text-color;
+      }
+      input, select, textarea {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+      .full-width {
+        grid-column: 1 / -1;
+      }
+      .teal-button {
+        background-color: $primary-color-normal;
+        color: white;
         border: none;
-        transition: background-color 2s ease;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .purple-button {
+        background-color: $secondary-color-normal;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        &:hover{
+          background-color: $secondary-color-dark_hover;
+        }
+      }
     }
-    .hero-button:hover {
-        background-color: orange;
-    }
+  }
 }
