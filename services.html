@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Services || NAP Advisory</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./dist/images/logo1.png" sizes="any"/>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Adamina&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <!-- Feather Icon -->
+    <link
+            href="
+        https://cdn.jsdelivr.net/npm/feather-icons-css@1.2.0/css/feather.min.css
+        "
+            rel="stylesheet"
+    />
+
+    <!-- Tailwind Css Pack -->
+    <link href="./dist/css/tailwind/tailwind.css" rel="stylesheet"/>
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./dist/css/index.css"/>
+</head>
+<body class="antialiased">
+<!-------- Header || START ---------->
+<header class="header">
+    <div class="container px-6 mx-auto md:px-16">
+        <nav class="flex flex-row items-center justify-between header__nav">
+            <!-- Logo -->
+            <div class="header__logo">
+                <img src="./dist/images/logo2.png" alt="Logo"/>
+            </div>
+
+            <!-- Header Nav Menu -->
+            <div class="hidden header__menu md:inline-block">
+                <nav class="nav_menu">
+                    <label for="drop" class="toggle">Home</label>
+                    <input type="checkbox" id="drop"/>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <!-- First Tier Drop Down -->
+                            <label for="drop-1" class="toggle">Services</label>
+                            <a href="#">Services</a>
+                            <input type="checkbox" id="drop-1"/>
+
+                            <ul class="animate__animated animate__slideInUp">
+                                <li><a href="#">Themes and stuff</a></li>
+                                <li><a href="#">Plugins</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- First Tier Drop Down -->
+                            <label for="drop-2" class="toggle">Publications</label>
+                            <a href="#">Publications</a>
+                            <input type="checkbox" id="drop-2"/>
+                            <ul class="animate__animated animate__slideInUp">
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Links</a></li>
+                                <li>
+                                    <!-- Second Tier Drop Down -->
+                                    <label for="drop-3" class="toggle">Blogs</label>
+                                    <a href="#">Blogs</a>
+                                    <input type="checkbox" id="drop-3"/>
+
+                                    <ul class="animate__animated animate__slideInUp">
+                                        <li><a href="#">HTML/CSS</a></li>
+                                        <li><a href="#">jQuery</a></li>
+                                        <li><a href="#">Other</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="products.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Header Button -->
+            <div class="header__btn">
+                <!-- Mobile Menu btn start-->
+                <div class="header__mobilemenu-btn md:hidden toggle-menu">
+                    <a href="#" class=""><i data-feather="menu"></i></a>
+                </div>
+                <!-- Mobile Menu btn end-->
+
+                <div class="hidden header__social md:inline-block">
+                    <ul class="inline-flex">
+                        <li class="px-2">
+                            <a href="#" class="button button_primary"> Login </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="#" class="button button_secondary"> Sign Up </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <!-- <nav class="mobile__menu mobile__menu-left">
+        <div class="mobile__menu--head">
+            <a href="#">
+                <span>&nbsp;</span>
+                <span
+                    class="close-menu"
+                    style="border-left: 1px solid #d1d8d8; padding-left: 12px"
+                    ><i data-feather="x" class="arrow-md"></i
+                ></span>
+            </a>
+        </div>
+        <div class="mobile__menu--main">
+            <a href="index.html">
+                <span>Home</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span>
+            </a>
+            <a href="about-us.html"
+                ><span>About</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+            <a href="products.html"
+                ><span>Products</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+            <a href="#"
+                ><span>Services</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+            <a href="#"
+                ><span>Clients</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+            <a href="#"
+                ><span>Contact</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+        </div>
+    </nav>
+    <div class="mobile__menu-overlay"></div> -->
+</header>
+<!---------- Header || END -------------->
+
+<!---------- HERO SECTION || START -------------->
+<section class="relative mb-10 hero">
+    <div class="mx-auto">
+        <div class="flex flex-col items-center justify-start hero__banner py-12 md:flex-row">
+            <!-- Hero Text Content -->
+            <div class="w-full md:w-1/2 hero__txt px-20">
+                <div class="hero__text-content">
+                    <!-- Short Breadcrumb Title : START -->
+                    <div class="short_breadcrumb">
+                            <span>
+                                <i class="ft-help-circle"></i>
+                            </span>
+                        <span>SERVICES</span>
+                    </div>
+                    <!-- Short Breadcrumb Title : END-->
+                    <h1>Our Services</h1>
+
+                    <ul class="services_unorder">
+                        <li>
+                            <a href="#">Individual Income Tax</a>
+                        </li>
+                        <li>
+                            <a href="#">Value Added Tax</a>
+                        </li>
+                        <li>
+                            <a href="#">Secretarial Work (RJSC)</a>
+                        </li>
+                        <li>
+                            <a href="#">Regulatory & Others</a>
+                        </li>
+                        <li>
+                            <a href="#">BOP Services</a>
+                        </li>
+                        <li>
+                            <a href="#"> Licensing & Renewal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="w-full md:w-1/2 hero__img px-8">
+                <div class="hero__banner-img py-12">
+                    <img
+                            class="animate__animated animate__fadeInUpBig"
+                            src="./dist/images/aboutus_hero.png"
+                            alt="Hero Image"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---------- HERO SECTION || END -------------->
+
+<!---------- Services Page || START -------------->
+<main class="py-10 services">
+
+    <section class="services_container py-8 px-6 my-12 mx-auto">
+
+        <!---------- NAP Partner Story SECTION || START -------------->
+        <section class="napactivities py-1 px-5 mx-auto container">
+            <div class="napactivities_container flex items-start justify-between w-full">
+                <!-- Text Content -->
+                <div class="napactivities_text px-6 w-2/3">
+
+                    <h1>Income TAX- Individual Income Tax-</h1>
+                    <h2>Individual income tax is a tax imposed by governments on the income generated by individuals
+                        :</h2>
+                    <p>
+                        Income tax is a vital component of a country's revenue system, enabling governments to fund
+                        essential public services and infrastructure projects. It is typically levied on individuals and
+                        businesses based on their earnings, with rates often varying according to income levels.
+                        Progressive tax systems aim to ensure that those with higher incomes contribute a larger
+                        percentage, promoting economic equity. Accurate filing and compliance are crucial, as tax
+                        evasion can result in significant penalties. By paying income taxes, citizens contribute to
+                        societal development, ensuring better healthcare, education, and security for all.as tax evasion
+                        can result in significant penalties. By paying income taxes, citizens contribute to societal
+                        development, ensuring better healthcare, education, and security for all.as tax evasion can
+                        result in significant penalties. By paying income taxes, citizens contribute to societal
+                        development, ensuring better healthcare, education, and security for all.as tax evasion can
+                        result in significant penalties.
+                    </p>
+
+                </div>
+                <!-- Image -->
+                <div class="napactivities_img px-2 w-1/3">
+                    <picture class="flex justify-end">
+                        <img class="rounded-2xl" src="./dist/images/services1.jpeg" alt="Services"/>
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <!---------- NAP Partner Story SECTION || END -------------->
+
+        <!---------- NAP SERVICES SECTION || START -------------->
+        <section class="py-1 my-4 px-5 mx-auto container">
+            <div class="services_content  w-full">
+                <h2 class="py-5">Services can be availed from here-</h2>
+                <div class="services_content-cards">
+                    <!-- Single Service Card -->
+                    <div class="services_content-card">
+                        <div class="icon">
+                            <img src="./dist/images/tax.png" alt="Vector"/>
+                        </div>
+                        <h2>Deductions and Credits:</h2>
+                        <p>Income tax is a vital component of a country's revenue system, enabling governments to fund
+                            essential public services and infrastructure projects.</p>
+                        <a
+                                href="#"
+                                class="button button_secondary flex justify-center items-center"
+                        >Go
+                            <span class="pl-1 flex justify-center items-center"><i class="ft-arrow-right"></i> </span
+                            ></a>
+                    </div>
+                    <div class="services_content-card services-card-active">
+                        <div class="icon">
+                            <img src="./dist/images/tax.png" alt="Vector"/>
+                        </div>
+                        <h2>Deductions and Credits:</h2>
+                        <p>Income tax is a vital component of a country's revenue system, enabling governments to fund
+                            essential public services and infrastructure projects.</p>
+                        <a
+                                href="#"
+                                class="button button_secondary flex justify-center items-center"
+                        >Go
+                            <span class="pl-1 flex justify-center items-center"><i class="ft-arrow-right"></i> </span
+                            ></a>
+                    </div>
+                    <div class="services_content-card">
+                        <div class="icon">
+                            <img src="./dist/images/tax.png" alt="Vector"/>
+                        </div>
+                        <h2>Deductions and Credits:</h2>
+                        <p>Income tax is a vital component of a country's revenue system, enabling governments to fund
+                            essential public services and infrastructure projects.</p>
+                        <a
+                                href="#"
+                                class="button button_secondary flex justify-center items-center"
+                        >Go
+                            <span class="pl-1 flex justify-center items-center"><i class="ft-arrow-right"></i> </span
+                            ></a>
+                    </div>
+                    <div class="services_content-card">
+                        <div class="icon">
+                            <img src="./dist/images/tax.png" alt="Vector"/>
+                        </div>
+                        <h2>Deductions and Credits:</h2>
+                        <p>Income tax is a vital component of a country's revenue system, enabling governments to fund
+                            essential public services and infrastructure projects.</p>
+                        <a
+                                href="#"
+                                class="button button_secondary flex justify-center items-center"
+                        >Go
+                            <span class="pl-1 flex justify-center items-center"><i class="ft-arrow-right"></i> </span
+                            ></a>
+                    </div>
+                    <div class="services_content-card">
+                        <div class="icon">
+                            <img src="./dist/images/tax.png" alt="Vector"/>
+                        </div>
+                        <h2>Deductions and Credits:</h2>
+                        <p>Income tax is a vital component of a country's revenue system, enabling governments to fund
+                            essential public services and infrastructure projects.</p>
+                        <a
+                                href="#"
+                                class="button button_secondary flex justify-center items-center"
+                        >Go
+                            <span class="pl-1 flex justify-center items-center"><i class="ft-arrow-right"></i> </span
+                            ></a>
+                    </div>
+                    <div class="services_content-card">
+                        <div class="icon">
+                            <img src="./dist/images/tax.png" alt="Vector"/>
+                        </div>
+                        <h2>Deductions and Credits:</h2>
+                        <p>Income tax is a vital component of a country's revenue system, enabling governments to fund
+                            essential public services and infrastructure projects.</p>
+                        <a
+                                href="#"
+                                class="button button_secondary flex justify-center items-center"
+                        >Go
+                            <span class="pl-1 flex justify-center items-center"><i class="ft-arrow-right"></i> </span
+                            ></a>
+                    </div>
+                    <div class="services_content-card">
+                        <div class="icon">
+                            <img src="./dist/images/tax.png" alt="Vector"/>
+                        </div>
+                        <h2>Deductions and Credits:</h2>
+                        <p>Income tax is a vital component of a country's revenue system, enabling governments to fund
+                            essential public services and infrastructure projects.</p>
+                        <a
+                                href="#"
+                                class="button button_secondary flex justify-center items-center"
+                        >Go
+                            <span class="pl-1 flex justify-center items-center"><i class="ft-arrow-right"></i> </span
+                            ></a>
+                    </div>
+                    <div class="services_content-card">
+                        <div class="icon">
+                            <img src="./dist/images/tax.png" alt="Vector"/>
+                        </div>
+                        <h2>Deductions and Credits:</h2>
+                        <p>Income tax is a vital component of a country's revenue system, enabling governments to fund
+                            essential public services and infrastructure projects.</p>
+                        <a
+                                href="#"
+                                class="button button_secondary flex justify-center items-center"
+                        >Go
+                            <span class="pl-1 flex justify-center items-center"><i class="ft-arrow-right"></i> </span
+                            ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------- NAP SERVICES SECTION || END -------------->
+    </section>
+
+</main>
+<!---------- Services Page || END -------------->
+
+<!-- Footer Section || START -->
+<footer class="py-6 footer">
+    <div class="container px-6 mx-auto md:px-16 footer__container">
+        <div class="flex flex-wrap justify-center footer__wrapper">
+            <div class="w-1/2 md:w-2/5">
+                <!-- Footer Logo -->
+                <img
+                        src="./dist/images/logo2.png"
+                        class="py-8 footer__logo"
+                        alt="Footer Logo"
+                />
+
+                <!-- Footer Social Media -->
+                <div class="w-full flex items-center text-gray-300">
+                    <h3 class="font-medium text-xl">Follow: &nbsp;</h3>
+                    <ul class="flex justify-center md:justify-start footer__social">
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Company -->
+            <div class="w-1/2 pt-6 md:pt-0 md:w-1/5">
+                <div class="ml-12 footer__box md:ml-0">
+                    <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
+                        Company
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="flex">Home</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html" class="flex">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Publications -->
+            <div class="flex justify-start w-1/2 md:w-1/5">
+                <div class="footer__box">
+                    <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
+                        Publication
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="#" class="flex">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">Resources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Contact -->
+            <div class="w-1/2 md:w-1/5">
+                <div class="ml-12 footer__box md:ml-0">
+                    <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
+                        Contact
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="javascript:void()" class="flex">+8801632-541054</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">+8801928-451320</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">WhatsApp : +8801632-541054</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">napadvisory@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="w-full footer__copyright">
+            <div
+                class="flex flex-col items-center pt-8 pb-6 text-center md:flex-row md:justify-between"
+            >
+                <div class="w-full md:w-1/2 text-start">
+                    <p
+                        class="pb-5 text-center md:pb-0 md:text-left"
+                        style="margin-bottom: 0"
+                    >
+                        © 2024 NAPAdvisory. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <ul class="flex justify-center md:justify-end footer__social">
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</footer>
+<!-- Footer Section || END -->
+
+<!-- --------------   SCRIPTS --------------  -->
+<!-- Feather Icon -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+    feather.replace();
+</script>
+<!-- Main JS -->
+<script src="./app.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+.services_unorder {
+  li {
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    font-weight: 400;
+    border-top: 1px solid #fff;
+    list-style: disc;
+    font-family: 'Manrope', sans-serif;
+
+    a {
+      @include transition-sm;
+
+      &:hover {
+        color: $secondary-color-normal;
+      }
+    }
+  }
+}
+
+.services {
+  .services_container {
+    .napactivities_text {
+      h1 {
+        font-size: 28px;
+
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 1.2rem;
+        font-family: 'Adamina', serif;
+        color: $dark-text-color;
+        line-height: 38px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .services_content {
+      h2{
+        font-family: 'Adamina', serif;
+        color: $dark-text-color;
+        line-height: 48px;
+        font-size: 24px;
+      }
+      .services_content-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        .services-card-active{
+          border: 1px solid $primary-color-normal;
+        }
+
+        .services_content-card {
+          background: rgba(243, 244, 246, 1);
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          padding: 24px;
+          width: auto;
+          text-align: center;
+
+          .icon {
+            font-size: 24px;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: center;
+          }
+
+          h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #333;
+          }
+
+          p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 20px;
+          }
+
+          .button {
+            background-color: $secondary-color-normal;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            @include transition-sm;
+            &:hover{
+              background-color: $secondary-color-normal_hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
