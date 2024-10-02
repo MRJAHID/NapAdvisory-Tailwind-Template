@@ -106,11 +106,11 @@ nav.nav_menu ul li {
 /* Styling the links */
 nav.nav_menu a {
     display: block;
-    padding: 14px 15px;
+    padding: 7px 13px;
     color: $text-color;
     line-height: 1.7;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 nav.nav_menu ul li ul li:hover {
@@ -158,7 +158,7 @@ nav.nav_menu ul li:hover > ul {
 
 /* Fisrt Tier Dropdown */
 nav.nav_menu ul ul li {
-    width: 170px;
+    width: 190px;
     float: none;
     display: list-item;
     position: relative;
