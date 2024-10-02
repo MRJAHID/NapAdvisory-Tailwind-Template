@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Resources || NAP Advisory</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./dist/images/logo1.png" sizes="any"/>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Adamina&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <!-- Feather Icon -->
+    <link
+            href="
+        https://cdn.jsdelivr.net/npm/feather-icons-css@1.2.0/css/feather.min.css
+        "
+            rel="stylesheet"
+    />
+
+    <!-- Tailwind Css Pack -->
+    <link href="./dist/css/tailwind/tailwind.css" rel="stylesheet"/>
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./dist/css/index.css"/>
+</head>
+<body class="antialiased">
+<!-------- Header || START ---------->
+<header class="header">
+    <div class="container px-6 mx-auto md:px-16">
+        <nav class="flex flex-row items-center justify-between header__nav">
+            <!-- Logo -->
+            <div class="header__logo">
+                <img src="./dist/images/logo2.png" alt="Logo"/>
+            </div>
+
+            <!-- Header Nav Menu -->
+            <div class="hidden header__menu md:inline-block">
+                <nav class="nav_menu">
+                    <label for="drop" class="toggle">Home</label>
+                    <input type="checkbox" id="drop"/>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <!-- First Tier Drop Down -->
+                            <label for="drop-1" class="toggle">Services</label>
+                            <a href="#">Services</a>
+                            <input type="checkbox" id="drop-1"/>
+
+                            <ul class="animate__animated animate__slideInUp">
+                                <li><a href="#">Themes and stuff</a></li>
+                                <li><a href="#">Plugins</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- First Tier Drop Down -->
+                            <label for="drop-2" class="toggle">Publications</label>
+                            <a href="#">Publications</a>
+                            <input type="checkbox" id="drop-2"/>
+                            <ul class="animate__animated animate__slideInUp">
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Links</a></li>
+                                <li>
+                                    <!-- Second Tier Drop Down -->
+                                    <label for="drop-3" class="toggle">Blogs</label>
+                                    <a href="#">Blogs</a>
+                                    <input type="checkbox" id="drop-3"/>
+
+                                    <ul class="animate__animated animate__slideInUp">
+                                        <li><a href="#">HTML/CSS</a></li>
+                                        <li><a href="#">jQuery</a></li>
+                                        <li><a href="#">Other</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="products.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Header Button -->
+            <div class="header__btn">
+                <!-- Mobile Menu btn start-->
+                <div class="header__mobilemenu-btn md:hidden toggle-menu">
+                    <a href="#" class=""><i data-feather="menu"></i></a>
+                </div>
+                <!-- Mobile Menu btn end-->
+
+                <div class="hidden header__social md:inline-block">
+                    <ul class="inline-flex">
+                        <li class="px-2">
+                            <a href="#" class="button button_primary"> Login </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="#" class="button button_secondary"> Sign Up </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <!-- <nav class="mobile__menu mobile__menu-left">
+        <div class="mobile__menu--head">
+            <a href="#">
+                <span>&nbsp;</span>
+                <span
+                    class="close-menu"
+                    style="border-left: 1px solid #d1d8d8; padding-left: 12px"
+                    ><i data-feather="x" class="arrow-md"></i
+                ></span>
+            </a>
+        </div>
+        <div class="mobile__menu--main">
+            <a href="index.html">
+                <span>Home</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span>
+            </a>
+            <a href="about-us.html"
+                ><span>About</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+            <a href="products.html"
+                ><span>Products</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+            <a href="#"
+                ><span>Services</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+            <a href="#"
+                ><span>Clients</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+            <a href="#"
+                ><span>Contact</span>
+                <span><i data-feather="arrow-right" class="arrow-md"></i></span
+            ></a>
+        </div>
+    </nav>
+    <div class="mobile__menu-overlay"></div> -->
+</header>
+<!---------- Header || END -------------->
+
+<!---------- HERO SECTION || START -------------->
+<section class="relative mb-6 hero">
+    <div class="mx-auto">
+        <div class="flex flex-col items-center justify-start hero__banner py-12 md:flex-row">
+            <!-- Hero Text Content -->
+            <div class="w-full md:w-1/2 hero__txt px-20">
+                <div class="hero__text-content">
+                    <!-- Short Breadcrumb Title : START -->
+                    <div class="short_breadcrumb">
+                            <span>
+                                <i class="ft-help-circle"></i>
+                            </span>
+                        <span>Resources</span>
+                    </div>
+                    <!-- Short Breadcrumb Title : END-->
+                    <h1>Our Resources</h1>
+
+                    <ul class="services_unorder">
+                        <li>
+                            <a href="#">TDS & VDS Rate</a>
+                        </li>
+                        <li>
+                            <a href="#">Finance ACT</a>
+                        </li>
+                        <li>
+                            <a href="#">Income Tax SROs</a>
+                        </li>
+                        <li>
+                            <a href="#">Vat SROs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="w-full md:w-1/2 hero__img px-8">
+                <div class="hero__banner-img py-12">
+                    <img
+                            class="animate__animated animate__fadeInUpBig"
+                            src="./dist/images/resourcehero.png"
+                            alt="Hero Image"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---------- HERO SECTION || END -------------->
+
+<!---------- Resources Page || START -------------->
+<main class="py-8">
+    <section class="resources py-4 px-6 my-6 mx-auto">
+
+        <!---------- NAP resources SECTION || START -------------->
+        <section class="resources_container py-1 px-5 mx-auto container">
+            <h2>TDS & VDS Rate Resources Download</h2>
+            <div class="resources_table flex items-start justify-center w-full">
+                <div class="w-full max-w-3xl">
+                    <!--      Table     -->
+                    <table class="w-full mb-10 bg-white rounded-lg overflow-hidden">
+                        <thead class="">
+                        <tr style="background-color: rgb(165 243 252);" class="text-cyan-800 w-full">
+                            <th style="border-right: 1px solid #9cacc8;" class="w-1/2 1py-3 px-6 text-center">Year</th>
+                            <th class="w-1/2 py-3 px-6 text-center">PDF Download</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr style="background-color: rgb(236 254 255);" class="bg-cyan-50">
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-6 text-center">2021</td>
+                            <td class="py-3 px-6 text-center">
+                                <button style="background-color: rgb(6 182 212);"
+                                        class="bg-cyan-500 text-white rounded-full p-1 hover:bg-cyan-600 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr style="	background-color: rgb(207 250 254);" class="bg-cyan-100">
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-6 text-center">2022</td>
+                            <td class="py-3 px-6 text-center">
+                                <button style="background-color: rgb(6 182 212);"
+                                        class="bg-cyan-500 text-white rounded-full p-1 hover:bg-cyan-600 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr style="background-color: rgb(236 254 255);" class="bg-cyan-50">
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-6 text-center">2021</td>
+                            <td class="py-3 px-6 text-center">
+                                <button style="background-color: rgb(6 182 212);"
+                                        class="bg-cyan-500 text-white rounded-full p-1 hover:bg-cyan-600 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr style="	background-color: rgb(207 250 254);" class="bg-cyan-100">
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-6 text-center">2022</td>
+                            <td class="py-3 px-6 text-center">
+                                <button style="background-color: rgb(6 182 212);"
+                                        class="bg-cyan-500 text-white rounded-full p-1 hover:bg-cyan-600 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr style="background-color: rgb(236 254 255);" class="bg-cyan-50">
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-6 text-center">2021</td>
+                            <td class="py-3 px-6 text-center">
+                                <button style="background-color: rgb(6 182 212);"
+                                        class="bg-cyan-500 text-white rounded-full p-1 hover:bg-cyan-600 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr style="	background-color: rgb(207 250 254);" class="bg-cyan-100">
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-6 text-center">2022</td>
+                            <td class="py-3 px-6 text-center">
+                                <button style="background-color: rgb(6 182 212);"
+                                        class="bg-cyan-500 text-white rounded-full p-1 hover:bg-cyan-600 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--    Pagination      -->
+                    <div class="flex justify-center space-x-1 dark:text-gray-800">
+                        <button title="previous" type="button" class="inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md">
+                            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="w-4">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button style="color: #00b4cb;" type="button" title="Page 1" class="inline-flex items-center justify-center w-8 h-8 text-sm font-semibold border rounded shadow-md dark:bg-gray-50 dark:text-violet-600 dark:border-violet-600">1</button>
+                        <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md" title="Page 2">2</button>
+                        <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md" title="Page 3">3</button>
+                        <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md" title="Page 4">4</button>
+                        <button title="next" type="button" class="inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md">
+                            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="w-4">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------- NAP resources SECTION || END -------------->
+
+    </section>
+
+</main>
+<!---------- Resources Page || END -------------->
+
+<!-- Footer Section || START -->
+<footer class="py-6 footer">
+    <div class="container px-6 mx-auto md:px-16 footer__container">
+        <div class="flex flex-wrap justify-center footer__wrapper">
+            <div class="w-1/2 md:w-2/5">
+                <!-- Footer Logo -->
+                <img
+                        src="./dist/images/logo2.png"
+                        class="py-8 footer__logo"
+                        alt="Footer Logo"
+                />
+
+                <!-- Footer Social Media -->
+                <div class="w-full flex items-center text-gray-300">
+                    <h3 class="font-medium text-xl">Follow: &nbsp;</h3>
+                    <ul class="flex justify-center md:justify-start footer__social">
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Company -->
+            <div class="w-1/2 pt-6 md:pt-0 md:w-1/5">
+                <div class="ml-12 footer__box md:ml-0">
+                    <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
+                        Company
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="flex">Home</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html" class="flex">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Publications -->
+            <div class="flex justify-start w-1/2 md:w-1/5">
+                <div class="footer__box">
+                    <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
+                        Publication
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="#" class="flex">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">Resources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Contact -->
+            <div class="w-1/2 md:w-1/5">
+                <div class="ml-12 footer__box md:ml-0">
+                    <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
+                        Contact
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="javascript:void()" class="flex">+8801632-541054</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">+8801928-451320</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">WhatsApp : +8801632-541054</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">napadvisory@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="w-full footer__copyright">
+            <div
+                class="flex flex-col items-center pt-8 pb-6 text-center md:flex-row md:justify-between"
+            >
+                <div class="w-full md:w-1/2 text-start">
+                    <p
+                        class="pb-5 text-center md:pb-0 md:text-left"
+                        style="margin-bottom: 0"
+                    >
+                        © 2024 NAPAdvisory. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <ul class="flex justify-center md:justify-end footer__social">
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="footer__icon" data-feather="youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</footer>
+<!-- Footer Section || END -->
+
+<!-- --------------   SCRIPTS --------------  -->
+<!-- Feather Icon -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+    feather.replace();
+</script>
+<!-- Main JS -->
+<script src="./app.js" type="text/javascript"></script>
+</body>
+</html>
