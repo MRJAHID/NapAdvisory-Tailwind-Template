@@ -128,7 +128,7 @@ nav.nav_menu ul ul {
     display: none;
     position: absolute;
     /* has to be the same number as the "line-height" of "nav.nav_menu a" */
-    top: 45px;
+    top: 35px;
     background-color: #fff;
 }
 
@@ -151,8 +151,8 @@ nav.nav_menu ul li:hover > ul {
     border-top: 3px solid $primary-color-normal;
     box-shadow: -2px 2px 50px -25px rgba(0, 0, 0, 0.2);
     border-radius: 1px 1px 15px 15px;
-    padding-top: 15px;
-    margin-top: 10px;
+    padding-top: 7px;
+    margin-top: 4px;
     transition: opacity 0.3s ease, top 0.3s ease, margin-top 0.3s ease, background-color 0.3s ease;
 }
 
@@ -170,9 +170,9 @@ nav.nav_menu ul ul li {
   */
 nav.nav_menu ul ul ul {
     position: absolute;
-    top: -60px;
+    top: -5px;
     /* has to be the same number as the "width" of "nav.nav_menu ul ul li" */
-    left: 170px;
+    left: 175px;
 }
 
 /* Change ' +' in order to change the Dropdown symbol */
