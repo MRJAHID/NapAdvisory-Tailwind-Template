@@ -1,0 +1,189 @@
+.nap_blog {
+  .nap_blog_container {
+    .nap_blog_side{
+      .recentpost_card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 20px;
+        width: 300px;
+        margin: 15px auto;
+
+      .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .card-header h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .thumb-icon {
+        background-color: #ffd700;
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+      .post {
+        display: flex;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px dotted #ccc;
+      }
+      .post:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      .post-image {
+        width: 60px;
+        height: 50px;
+        background-color: #e0e0e0;
+        margin-right: 10px;
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .post-content {
+        flex-grow: 1;
+      }
+      .post-title {
+        margin: 0 0 5px 0;
+        font-size: 16px;
+        font-family: 'Manrope', serif;
+        color: $text-color;
+        line-height: 26px;
+
+        @include transition-sm;
+        &:hover {
+          color: $primary-color-normal;
+        }
+      }
+      .post-date {
+        font-size: 12px;
+        color: #888;
+        text-align: right;
+      }
+      }
+      .categories-container {
+        max-width: 300px;
+        margin: 15px auto;
+        background-color: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .categories-title {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 15px;
+        border-bottom: 1px solid #e0e0e0;
+        position: relative;
+      }
+      .categories-title::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 15px;
+        bottom: 15px;
+        width: 4px;
+        background-color: #e91e63;
+      }
+      .categories-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .category-item {
+        padding: 10px 15px;
+        border-bottom: 1px solid #e0e0e0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .category-item:last-child {
+        border-bottom: none;
+      }
+      .category-name {
+        font-weight: 400;
+        font-size: 16px;
+        font-family: 'Manrope', serif;
+        color: $text-color;
+        line-height: 27px;
+
+        @include transition-sm;
+        &:hover {
+          color: $primary-color-normal;
+        }
+
+      }
+      .category-count {
+        color: #888;
+      }
+    }
+    .nap_blog_article {
+      .post {
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .post-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .post-content {
+        padding: 20px;
+      }
+
+      .post-title {
+        font-size: 26px;
+        margin-bottom: 16px;
+
+        font-weight: 400;
+        font-family: 'Adamina', serif;
+        color: $dark-text-color;
+        line-height: 48px;
+      }
+
+      .post-meta {
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: 'Manrope', serif;
+        color: $text-color;
+        line-height: 27px;
+        border-bottom: 1px dashed;
+      }
+
+      .post-meta span {
+        margin-right: 15px;
+      }
+
+      .post-body {
+        margin-bottom: 20px;
+
+        font-weight: 400;
+        font-size: 16px;
+        font-family: 'Manrope', serif;
+        color: $text-color;
+        p{
+        line-height: 32px;
+
+        }
+      }
+    }
+  }
+}
+
+
