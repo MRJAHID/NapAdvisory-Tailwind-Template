@@ -36,7 +36,7 @@
 <body class="antialiased">
 <!-------- Header || START ---------->
 <header class="header">
-    <div class="container px-6 mx-auto md:px-16">
+    <div class="container mx-auto px-4 xl:px-16">
         <nav class="flex flex-row items-center justify-between header__nav">
             <!-- Logo -->
             <div class="header__logo">
@@ -44,7 +44,7 @@
             </div>
 
             <!-- Header Nav Menu -->
-            <div class="hidden header__menu md:inline-block">
+            <div class="hidden header__menu lg:inline-block">
                 <nav class="nav_menu">
                     <label for="drop" class="toggle">Home</label>
                     <input type="checkbox" id="drop" />
@@ -95,12 +95,12 @@
             <!-- Header Button -->
             <div class="header__btn">
                 <!-- Mobile Menu btn start-->
-                <div class="header__mobilemenu-btn md:hidden toggle-menu">
+                <div class="header__mobilemenu-btn lg:hidden toggle-menu">
                     <a href="#" class=""><i data-feather="menu"></i></a>
                 </div>
                 <!-- Mobile Menu btn end-->
 
-                <div class="hidden header__social md:inline-block">
+                <div class="hidden header__social lg:inline-block">
                     <ul class="inline-flex">
                         <li class="px-2">
                             <a href="login.html" class="button button_primary"> Login </a>
@@ -159,9 +159,9 @@
 <!---------- HERO SECTION || START -------------->
 <section class="relative mb-6 hero">
     <div class="mx-auto">
-        <div class="flex flex-col items-center justify-start hero__banner py-12 md:flex-row">
+        <div class="flex flex-col-reverse items-center justify-start hero__banner py-8 lg:py-12 lg:flex-row">
             <!-- Hero Text Content -->
-            <div class="w-full md:w-1/2 hero__txt px-20">
+            <div class="w-full lg:w-1/2 hero__txt px-12 lg:px-20">
                 <div class="hero__text-content">
                     <!-- Short Breadcrumb Title : START -->
                     <div class="short_breadcrumb">
@@ -191,8 +191,8 @@
             </div>
 
             <!-- Hero Image -->
-            <div class="w-full md:w-1/2 hero__img px-8">
-                <div class="hero__banner-img py-12">
+            <div class="w-full lg:w-1/2 hero__img px-4 lg:px-8">
+                <div class="hero__banner-img py-4 lg:py-12">
                     <img
                             class="animate__animated animate__fadeInUpBig"
                             src="./dist/images/resourcehero.png"
@@ -331,121 +331,135 @@
 <!---------- Resources Page || END -------------->
 
 <!-- Footer Section || START -->
-<footer class="py-6 footer">
+<footer class="py-3 md:py-6 footer">
     <div class="container px-6 mx-auto md:px-16 footer__container">
         <div class="flex flex-wrap justify-center footer__wrapper">
-            <div class="w-1/2 md:w-2/5">
-                <!-- Footer Logo -->
+            <div class="w-full md:w-1/4">
                 <img
                         src="./dist/images/logo2.png"
                         class="py-8 footer__logo"
                         alt="Footer Logo"
                 />
-
-                <!-- Footer Social Media -->
-                <div class="w-full flex items-center text-gray-300">
-                    <h3 class="font-medium text-xl">Follow: &nbsp;</h3>
-                    <ul class="flex justify-center md:justify-start footer__social">
-                        <li>
-                            <a href="#">
-                                <i class="footer__icon" data-feather="facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="footer__icon" data-feather="twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="footer__icon" data-feather="instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="footer__icon" data-feather="youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <p class="font-medium text-gray-100 py-2 footer__para">
+                    “Your business, Our expertise”
+                </p>
             </div>
-
-            <!-- Footer Company -->
-            <div class="w-1/2 pt-6 md:pt-0 md:w-1/5">
-                <div class="ml-12 footer__box md:ml-0">
-                    <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
+            <div class="w-1/2 pt-6 md:pt-0 md:w-1/4">
+                <div class="footer__box md:ml-0">
+                    <h4 class="pb-2 text-lg font-medium text-gray-800 uppercase">
                         Company
                     </h4>
                     <ul>
                         <li>
-                            <a href="index.html" class="flex">Home</a>
+                            <a href="index.html" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >Home</a
+                            >
                         </li>
                         <li>
-                            <a href="aboutus.html" class="flex">About Us</a>
+                            <a href="aboutus.html" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >About Us</a
+                            >
                         </li>
                         <li>
-                            <a href="services.html" class="flex">Services</a>
+                            <a href="services.html" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >Services</a
+                            >
                         </li>
                         <li>
-                            <a href="online_advisory.html" class="flex">Online Advisory</a>
+                            <a href="online_advisory.html" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >Online Advisory</a
+                            >
                         </li>
                     </ul>
                 </div>
             </div>
-
-            <!-- Footer Publications -->
-            <div class="flex justify-start w-1/2 md:w-1/5">
+            <div class="w-1/2 pt-6 md:pt-0 md:w-1/4">
                 <div class="footer__box">
-                    <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
+                    <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
                         Publication
                     </h4>
                     <ul>
                         <li>
-                            <a href="blogs.html" class="flex">Blogs</a>
+                            <a href="blogs.html" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >Blogs</a
+                            >
                         </li>
                         <li>
-                            <a href="resources.html" class="flex">Resources</a>
+                            <a href="resources.html" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >Resources</a
+                            >
                         </li>
                         <li>
-                            <a href="contactus.html" class="flex">Contact Us</a>
+                            <a href="contactus.html" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >Contact Us</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >privacy Policy</a
+                            >
                         </li>
                     </ul>
                 </div>
             </div>
-
-            <!-- Footer Contact -->
-            <div class="w-1/2 md:w-1/5">
-                <div class="ml-12 footer__box md:ml-0">
-                    <h4 class="pb-2 text-xl font-medium text-gray-200 capitalize">
+            <div class="w-full md:w-1/4">
+                <div class="footer__box md:ml-0">
+                    <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
                         Contact
                     </h4>
                     <ul>
                         <li>
-                            <a href="javascript:void()" class="flex">+8801632-541054</a>
+                            <a href="tel:+8801973349642" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >+8801973349642</a
+                            >
                         </li>
                         <li>
-                            <a href="#" class="flex">+8801928-451320</a>
+                            <a href="tel:+8801973349643" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >+8801973349643</a
+                            >
                         </li>
                         <li>
-                            <a href="#" class="flex">WhatsApp : +8801632-541054</a>
+                            <a href="tel:+8801973349644" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >+8801973349644</a
+                            >
                         </li>
                         <li>
-                            <a href="#" class="flex">napadvisory@gmail.com</a>
+                            <a href="#" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >WhatsApp: +880 1973 349642</a
+                            >
+                        </li>
+                        <li class="hidden lg:inline-block">
+                            <a href="mailto:info.nappartners@gmail.com" class="flex"
+                            ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                            >Email: info.nappartners@gmail.com</a
+                            >
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <!-- <div class="w-full footer__copyright">
+        <div class="w-full footer__copyright">
             <div
-                class="flex flex-col items-center pt-8 pb-6 text-center md:flex-row md:justify-between"
+                    class="flex flex-col items-center pt-8 pb-6 text-center  md:flex-row md:justify-between"
             >
                 <div class="w-full md:w-1/2 text-start">
                     <p
-                        class="pb-5 text-center md:pb-0 md:text-left"
-                        style="margin-bottom: 0"
+                            class="pb-5 text-gray-400 text-center md:pb-0 md:text-left"
+                            style="margin-bottom: 0"
                     >
-                        © 2024 NAPAdvisory. All Rights Reserved.
+                        © 2024 Nap Advisory. All Rights Reserved.
                     </p>
                 </div>
                 <div class="w-full md:w-1/2">
@@ -473,7 +487,7 @@
                     </ul>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 </footer>
 <!-- Footer Section || END -->
