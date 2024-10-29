@@ -2,14 +2,34 @@
     background-color: $primary-color-normal;
     .hero__banner {
         img {
-            border-radius: 0px 10px 10px 0px;
+            border-radius: 0 10px 10px 0;
+            @media (max-width: 576px) {
+                border-radius:  0;
+            }
+        }
+        .hero__txt{
+            @media (min-width: 577px) and (max-width: 1023px) {
+                padding-top: 12px;
+                padding-bottom: 8px;
+            }
         }
         .hero__text-content {
+            @media (max-width: 576px) {
+                padding-top: 5px;
+                padding-bottom: 8px;
+            }
             h1 {
                 font-size: 36px;
                 color: #fff;
                 margin-bottom: 1rem;
                 font-family: 'Adamina', serif;
+                @media (max-width: 576px) {
+                    font-size: 26px;
+                    margin-top: 1rem;
+                }
+                @media (min-width: 576px) {
+                    font-size: 28px;
+                }
             }
             label {
                 background: #fff;
@@ -21,6 +41,10 @@
                 font-family: 'Manrope', sans-serif;
                 font-weight: 600;
                 display: inline-block;
+
+                @media (max-width: 576px) {
+                    font-size: 15px;
+                }
             }
             p {
                 color: white;
@@ -31,6 +55,8 @@
                 font-weight: 400;
                 font-family: 'Manrope', sans-serif;
             }
+
+
         }
     }
 }

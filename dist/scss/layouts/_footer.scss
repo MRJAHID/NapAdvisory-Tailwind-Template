@@ -43,6 +43,8 @@
 
         h4 {
             font-family: 'Adamina', serif;
+            color: #fff;
+            font-size: 16px;
         }
 
         ul {
@@ -64,6 +66,11 @@
                     &:hover {
                         color: $primary-color-normal;
                         transform: translateX(5px);
+                    }
+
+
+                    @media (max-width: 950px) {
+                        font-size: 16px;
                     }
                 }
             }

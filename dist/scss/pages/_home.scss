@@ -9,6 +9,9 @@
                 color: $dark-text-color;
                 line-height: 48px;
                 margin-bottom: 1rem;
+                @media (min-width: 376px) {
+                    font-size:  30px;
+                }
                 span {
                     color: $secondary-color-normal;
                 }
@@ -96,6 +99,11 @@
                 color: $dark-text-color;
                 line-height: 48px;
                 margin-bottom: 10px;
+
+                @media (max-width: 576px) {
+                    font-size:  29px;
+                }
+
                 span {
                     color: $secondary-color-normal;
                 }
@@ -124,6 +132,10 @@
                 border: none;
                 background: none;
                 outline: none;
+
+                @media (max-width: 576px) {
+                    font-size: 1rem;
+                }
             }
 
             .accordion button:hover,
@@ -214,12 +226,23 @@
                 font-family: 'Adamina', serif;
                 color: $dark-text-color;
                 line-height: 48px;
+
+                @media (max-width: 576px) {
+                    font-size: 29px;
+                    line-height: 44px;
+                }
             }
 
             .nap_reviews-cards {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 10px;
+
+                @media (max-width: 650px) {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 8px;
+                }
+
                 .nap_reviews-card {
                     background-color: #fff;
                     img {
@@ -240,6 +263,10 @@
                         font-family: 'Manrope', sans-serif;
                         font-weight: 400;
                         color: $text-color;
+
+                        @media (max-width: 650px) {
+                            padding-left: 32px;
+                        }
                     }
                     .nap_reviews-desc {
                         font-size: $body-font-size;
