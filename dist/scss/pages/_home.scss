@@ -10,8 +10,8 @@
                 line-height: 48px;
                 margin-bottom: 1rem;
 
-                @media (min-width: 376px) {
-                    font-size:  30px;
+                @media (max-width: 786px) {
+                    font-size:  27px;
                 }
 
                 span {
