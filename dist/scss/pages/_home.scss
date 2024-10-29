@@ -9,9 +9,11 @@
                 color: $dark-text-color;
                 line-height: 48px;
                 margin-bottom: 1rem;
+
                 @media (min-width: 376px) {
                     font-size:  30px;
                 }
+
                 span {
                     color: $secondary-color-normal;
                 }
