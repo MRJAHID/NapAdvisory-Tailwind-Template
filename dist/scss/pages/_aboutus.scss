@@ -15,6 +15,12 @@
             .nap_about_vision-card {
                 display: flex;
                 padding: 12px 2px;
+                flex-direction: row;
+
+                @media (max-width: 786px) {
+                    flex-direction: column-reverse;
+                }
+
                 .nap_about_vision-txt {
                     h2 {
                         font-family: 'Adamina', serif;
@@ -29,12 +35,22 @@
                         line-height: 26px;
                         margin-bottom: 2px;
                     }
+
                     width: 50%;
                     padding: 6px 12px;
+
+                    @media (max-width: 786px) {
+                        width: 100%;
+                    }
                 }
                 .nap_about_vision-img {
                     width: 50%;
                     padding: 6px 12px;
+
+                    @media (max-width: 786px) {
+                        width: 100%;
+                    }
+
                     img {
                         width: 550px;
                         height: 380px;
