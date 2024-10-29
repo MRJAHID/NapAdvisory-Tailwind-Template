@@ -2,6 +2,11 @@
   .container {
     display: flex;
     height: 100%;
+    flex-direction: row;
+
+    @media (max-width: 786px) {
+      flex-direction: column;
+    }
   }
   .left-panel {
     background-color: #00b8d4;
