@@ -9,6 +9,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: 786px) {
+            padding: 1rem;
+        }
+        @media (min-width: 1100px) {
+            min-height: 65vh;
+        }
+        @media (min-width: 1700px) {
+            min-height: 50vh;
+        }
     }
 
     .form {
@@ -21,6 +31,10 @@
         overflow: hidden;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
+        @media (min-width: 1200px) {
+            max-width: 1020px;
+        }
     }
 
     .contact-form {
