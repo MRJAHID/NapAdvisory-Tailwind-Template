@@ -41,18 +41,37 @@
     text-transform: capitalize;
     color: #fff;
     font-family: 'Adamina', serif;
+
+
+    @media (max-width: 991px) {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 591px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 391px) {
+      font-size: 1.5rem;
+    }
+
   }
 
-  @media (max-width: 991px) {
-    .page-title h2 {
-      font-size: 2.5rem;
-    }
-  }
+
 
   .hero_title {
     position: absolute;
     width: 100%;
-    top: 45%
+    top: 45%;
+
+    @media (max-width: 591px) {
+      width: auto;
+    }
+
+    @media (max-width: 391px) {
+      width: 100%;
+    }
+
   }
 
   //    Hero End
@@ -126,6 +145,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
+
+        @media (max-width: 600px) {
+          grid-template-columns: 1fr;
+          gap: 15px;
+        }
       }
       .form-group {
         display: flex;
