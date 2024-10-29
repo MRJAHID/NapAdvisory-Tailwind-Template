@@ -9,6 +9,10 @@
         width: 300px;
         margin: 15px auto;
 
+        @media (min-width: 700px) and  (max-width: 1023px){
+          width: 500px;
+        }
+
       .card-header {
         display: flex;
         align-items: center;
@@ -148,11 +152,14 @@
       .post-title {
         font-size: 26px;
         margin-bottom: 16px;
-
         font-weight: 400;
         font-family: 'Adamina', serif;
         color: $dark-text-color;
         line-height: 48px;
+
+        @media (max-width: 786px) {
+          font-size:  21px;
+        }
       }
 
       .post-meta {
