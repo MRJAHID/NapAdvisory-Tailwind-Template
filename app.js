@@ -32,3 +32,6 @@ function toggleAccordion() {
 
 items.forEach((item) => item.addEventListener('click', toggleAccordion));
 // Faq Accordian END
+
+
+// Carousel
