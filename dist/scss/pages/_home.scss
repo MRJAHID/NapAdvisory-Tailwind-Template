@@ -220,6 +220,33 @@
 // ========= Nap CLIENT REVIEWS in Home Page
 .nap_reviews {
     .nap_reviews-container {
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+        .carousel-prev,
+        .carousel-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .carousel-prev {
+            left: 0;
+        }
+
+        .carousel-next {
+            right: 0;
+        }
+
         .nap_reviews-content {
             background-color: $primary-color-normal;
             h2 {
@@ -236,22 +263,34 @@
             }
 
             .nap_reviews-cards {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                display: flex;
                 gap: 10px;
-
-                @media (max-width: 650px) {
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 8px;
-                }
+                transition: transform 0.5s ease-in-out;
 
                 .nap_reviews-card {
+                    flex: 0 0 calc(98% / 3); /* Set the width to fit 3 items per slide */
+                    box-sizing: border-box;
                     background-color: #fff;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                    padding: 16px;
+
+
+
+                    @media (max-width: 750px) {
+                            flex: 0 0 calc(98% / 2); /* Adjust to show 2 items per slide on medium screens */
+                    }
+
+                    @media (max-width: 500px) {
+                        flex: 0 0 calc(100% / 1); /* Adjust to show 1 items per slide on smaller screens */
+                    }
+
                     img {
                         height: 50px;
                         width: 50px;
                         -o-object-fit: cover;
                         object-fit: cover;
+                        border-radius: 50%;
                     }
                     .nap_reviews-name {
                         font-size: $body-font-size;
@@ -290,14 +329,4 @@
     }
 }
 
-.embla {
-    overflow: hidden;
-}
-.embla__container {
-    display: flex;
-}
-.embla__slide {
-    flex: 0 0 100%;
-    min-width: 0;
-}
 

@@ -18,7 +18,8 @@
             href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
         />
-<!-- Carousel-->
+        <!-- Carousel-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Feather Icon -->
         <link
@@ -456,49 +457,78 @@
                         <h2 class="text-center mb-6">Client Reviews</h2>
 
                         <!-- CLIENT REVIEWS CARDS -->
-                        <div class="nap_reviews-cards py-2 mb-2 w-full">
-                            <!--  REVIEWS Single Card -->
-                            <div class="nap_reviews-card px-3 py-4 rounded-2xl">
-                                <div class="flex flex-col md:flex-row justify-between items-center mb-2">
-                                    <div class="flex items-center">
-                                        <img src="./dist/images/avatar.jpg" alt="Dp" />
-                                        <h4 class="nap_reviews-name px-2">Jahid Bhuiyan</h4>
-                                    </div>
-                                    <div class="nap_reviews-time">3 Days Ago</div>
-                                </div>
-                                <p class="nap_reviews-desc">
-                                    Lorem ipsum dolor sit amet consectetur. Libero sit nisl sit orci
-                                    iaculis aliquam. Senectus cursus ultricies molestie.
-                                </p>
-                            </div>
-                            <div class="nap_reviews-card px-3 py-4 rounded-2xl">
-                                <div class="flex flex-col md:flex-row justify-between items-center mb-2">
-                                    <div class="flex items-center">
-                                        <img src="./dist/images/avatar.jpg" alt="Dp" />
-                                        <h4 class="nap_reviews-name px-2">Jahid Bhuiyan</h4>
-                                    </div>
-                                    <div class="nap_reviews-time">3 Days Ago</div>
-                                </div>
-                                <p class="nap_reviews-desc">
-                                    Lorem ipsum dolor sit amet consectetur. Libero sit nisl sit orci
-                                    iaculis aliquam. Senectus cursus ultricies molestie.
-                                </p>
-                            </div>
-                            <div class="nap_reviews-card px-3 py-4 rounded-2xl">
-                                <div class="flex flex-col md:flex-row justify-between items-center mb-2">
-                                    <div class="flex items-center">
-                                        <img src="./dist/images/avatar.jpg" alt="Dp" />
-                                        <h4 class="nap_reviews-name px-2">Jahid Bhuiyan</h4>
-                                    </div>
-                                    <div class="nap_reviews-time">3 Days Ago</div>
-                                </div>
-                                <p class="nap_reviews-desc">
-                                    Lorem ipsum dolor sit amet consectetur. Libero sit nisl sit orci
-                                    iaculis aliquam. Senectus cursus ultricies molestie.
-                                </p>
-                            </div>
-
-                        </div>
+                       <div class="carousel-container">
+                           <div class="nap_reviews-cards main-carousel py-2 mb-2 w-full">
+                               <!--  REVIEWS Single Card -->
+                               <div class="nap_reviews-card carousel-cell px-3 py-4 rounded-2xl">
+                                   <div class="flex flex-col md:flex-row justify-between items-center mb-2">
+                                       <div class="flex items-center">
+                                           <img src="./dist/images/avatar.jpg" alt="Dp" />
+                                           <h4 class="nap_reviews-name px-2">Jahid Bhuiyan</h4>
+                                       </div>
+                                       <div class="nap_reviews-time">3 Days Ago</div>
+                                   </div>
+                                   <p class="nap_reviews-desc">
+                                       Lorem ipsum dolor sit amet consectetur. Libero sit nisl sit orci
+                                       iaculis aliquam. Senectus cursus ultricies molestie.
+                                   </p>
+                               </div>
+                               <div class="nap_reviews-card carousel-cell px-3 py-4 rounded-2xl">
+                                   <div class="flex flex-col md:flex-row justify-between items-center mb-2">
+                                       <div class="flex items-center">
+                                           <img src="./dist/images/avatar.jpg" alt="Dp" />
+                                           <h4 class="nap_reviews-name px-2">Jahid Bhuiyan</h4>
+                                       </div>
+                                       <div class="nap_reviews-time">3 Days Ago</div>
+                                   </div>
+                                   <p class="nap_reviews-desc">
+                                       Lorem ipsum dolor sit amet consectetur. Libero sit nisl sit orci
+                                       iaculis aliquam. Senectus cursus ultricies molestie.
+                                   </p>
+                               </div>
+                               <div class="nap_reviews-card carousel-cell px-3 py-4 rounded-2xl">
+                                   <div class="flex flex-col md:flex-row justify-between items-center mb-2">
+                                       <div class="flex items-center">
+                                           <img src="./dist/images/avatar.jpg" alt="Dp" />
+                                           <h4 class="nap_reviews-name px-2">Jahid Bhuiyan</h4>
+                                       </div>
+                                       <div class="nap_reviews-time">3 Days Ago</div>
+                                   </div>
+                                   <p class="nap_reviews-desc">
+                                       Lorem ipsum dolor sit amet consectetur. Libero sit nisl sit orci
+                                       iaculis aliquam. Senectus cursus ultricies molestie.
+                                   </p>
+                               </div>
+                               <div class="nap_reviews-card carousel-cell px-3 py-4 rounded-2xl">
+                                   <div class="flex flex-col md:flex-row justify-between items-center mb-2">
+                                       <div class="flex items-center">
+                                           <img src="./dist/images/avatar.jpg" alt="Dp" />
+                                           <h4 class="nap_reviews-name px-2">Jahid Bhuiyan</h4>
+                                       </div>
+                                       <div class="nap_reviews-time">3 Days Ago</div>
+                                   </div>
+                                   <p class="nap_reviews-desc">
+                                       Lorem ipsum dolor sit amet consectetur. Libero sit nisl sit orci
+                                       iaculis aliquam. Senectus cursus ultricies molestie.
+                                   </p>
+                               </div>
+                               <div class="nap_reviews-card carousel-cell px-3 py-4 rounded-2xl">
+                                   <div class="flex flex-col md:flex-row justify-between items-center mb-2">
+                                       <div class="flex items-center">
+                                           <img src="./dist/images/avatar.jpg" alt="Dp" />
+                                           <h4 class="nap_reviews-name px-2">Jahid Bhuiyan</h4>
+                                       </div>
+                                       <div class="nap_reviews-time">3 Days Ago</div>
+                                   </div>
+                                   <p class="nap_reviews-desc">
+                                       Lorem ipsum dolor sit amet consectetur. Libero sit nisl sit orci
+                                       iaculis aliquam. Senectus cursus ultricies molestie.
+                                   </p>
+                               </div>
+                           </div>
+                           <button class="carousel-prev">❮</button>
+                           <button class="carousel-next">❯</button>
+                       </div>
                         <!-- Button -->
                         <div class="flex justify-center">
                             <button class="my-4">
@@ -683,7 +713,7 @@
         <!-- --------------   SCRIPTS --------------  -->
 
         <!-- Carousel -->
-        <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <!-- Feather Icon -->
         <script src="https://unpkg.com/feather-icons"></script>
