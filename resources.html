@@ -40,28 +40,28 @@
         <nav class="flex flex-row items-center justify-between header__nav">
             <!-- Logo -->
             <div class="header__logo">
-                <img src="./dist/images/logo2.png" alt="Logo" />
+                <img src="./dist/images/logo2.png" alt="Logo"/>
             </div>
 
             <!-- Header Nav Menu -->
             <div class="hidden header__menu lg:inline-block">
                 <nav class="nav_menu">
                     <label for="drop" class="toggle">Home</label>
-                    <input type="checkbox" id="drop" />
+                    <input type="checkbox" id="drop"/>
                     <ul class="menu">
                         <li><a href="index.html">Home</a></li>
                         <li>
                             <!-- First Tier Drop Down -->
                             <label for="drop-1" class="toggle">Services</label>
                             <a href="#">Services</a>
-                            <input type="checkbox" id="drop-1" />
+                            <input type="checkbox" id="drop-1"/>
 
                             <ul class="animate__animated animate__slideInUp">
                                 <li>
                                     <!-- Second Tier Drop Down -->
                                     <label for="drop-3" class="toggle">Income Tax Service</label>
                                     <a href="#">Income Tax Service</a>
-                                    <input type="checkbox" id="drop-3" />
+                                    <input type="checkbox" id="drop-3"/>
 
                                     <ul class="animate__animated animate__slideInUp">
                                         <li><a href="#">Individual Income Tax</a></li>
@@ -80,7 +80,7 @@
                             <!-- First Tier Drop Down -->
                             <label for="drop-2" class="toggle">Publications</label>
                             <a href="#">Publications</a>
-                            <input type="checkbox" id="drop-2" />
+                            <input type="checkbox" id="drop-2"/>
                             <ul class="animate__animated animate__slideInUp">
                                 <li><a href="resources.html">Resources</a></li>
                                 <li><a href="blogs.html">Blogs</a></li>
@@ -206,26 +206,33 @@
 <!---------- HERO SECTION || END -------------->
 
 <!---------- Resources Page || START -------------->
-<main class="py-8">
-    <section class="resources py-4 px-6 my-6 mx-auto">
+<main class="py-5 md:py-8">
+    <section class="resources py-2 md:py-4 px-1 md:px-6 my-2 md:my-6 mx-auto">
 
         <!---------- NAP resources SECTION || START -------------->
-        <section class="resources_container py-1 px-5 mx-auto container">
+        <section class="resources_container py-1 px-1 md:px-5 mx-auto container">
             <h2>TDS & VDS Rate Resources Download</h2>
             <div class="resources_table flex items-start justify-center w-full">
-                <div class="w-full max-w-3xl">
+                <div class="w-full max-w-3xl lg:max-w-5xl">
                     <!--      Table     -->
                     <table class="w-full mb-10 bg-white rounded-lg overflow-hidden">
-                        <thead class="">
+                        <thead>
                         <tr style="background-color: rgb(165 243 252);" class="text-cyan-800 w-full">
-                            <th style="border-right: 1px solid #9cacc8;" class="w-1/2 1py-3 px-6 text-center">Year</th>
-                            <th class="w-1/2 py-3 px-6 text-center">PDF Download</th>
+                            <th style="border-right: 1px solid #9cacc8;" class="w-1/4 py-3 px-1 md:px-6 text-center">Year</th>
+                            <th style="border-right: 1px solid #9cacc8;" class="w-2/4 py-3 px-1 md:px-6 text-center">
+                                Description
+                            </th>
+                            <th class="w-1/4 py-3 px-1 md:px-6 text-center">PDF Download</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr style="background-color: rgb(236 254 255);" class="bg-cyan-50">
-                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-6 text-center">2021</td>
-                            <td class="py-3 px-6 text-center">
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-1 md:px-6 text-center">2021</td>
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-1 md:px-6 text-center">Lorem ipsum dolor
+                                sit amet, consectetur adipisicing elit. Aliquid amet cum delectus dolor, dolore ea eum
+                                explicabo maiores modi molestias?
+                            </td>
+                            <td class="py-3 px-1 md:px-6 text-center">
                                 <button style="background-color: rgb(6 182 212);"
                                         class="bg-cyan-500 text-white rounded-full p-1 hover:bg-cyan-600 transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
@@ -237,8 +244,12 @@
                             </td>
                         </tr>
                         <tr style="	background-color: rgb(207 250 254);" class="bg-cyan-100">
-                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-6 text-center">2022</td>
-                            <td class="py-3 px-6 text-center">
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-1 md:px-6 text-center">2022</td>
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-1 md:px-6 text-center">Lorem ipsum dolor
+                                sit amet, consectetur adipisicing elit. Aliquid amet cum delectus dolor, dolore ea eum
+                                explicabo maiores modi molestias?
+                            </td>
+                            <td class="py-3 px-1 md:px-6 text-center">
                                 <button style="background-color: rgb(6 182 212);"
                                         class="bg-cyan-500 text-white rounded-full p-1 hover:bg-cyan-600 transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
@@ -250,8 +261,12 @@
                             </td>
                         </tr>
                         <tr style="background-color: rgb(236 254 255);" class="bg-cyan-50">
-                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-6 text-center">2021</td>
-                            <td class="py-3 px-6 text-center">
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-1 md:px-6 text-center">2021</td>
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-1 md:px-6 text-center">Lorem ipsum dolor
+                                sit amet, consectetur adipisicing elit. Aliquid amet cum delectus dolor, dolore ea eum
+                                explicabo maiores modi molestias?
+                            </td>
+                            <td class="py-3 px-1 md:px-6 text-center">
                                 <button style="background-color: rgb(6 182 212);"
                                         class="bg-cyan-500 text-white rounded-full p-1 hover:bg-cyan-600 transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
@@ -263,8 +278,12 @@
                             </td>
                         </tr>
                         <tr style="	background-color: rgb(207 250 254);" class="bg-cyan-100">
-                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-6 text-center">2022</td>
-                            <td class="py-3 px-6 text-center">
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-1 md:px-6 text-center">2022</td>
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-1 md:px-6 text-center">Lorem ipsum dolor
+                                sit amet, consectetur adipisicing elit. Aliquid amet cum delectus dolor, dolore ea eum
+                                explicabo maiores modi molestias?
+                            </td>
+                            <td class="py-3 px-1 md:px-6 text-center">
                                 <button style="background-color: rgb(6 182 212);"
                                         class="bg-cyan-500 text-white rounded-full p-1 hover:bg-cyan-600 transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
@@ -276,8 +295,12 @@
                             </td>
                         </tr>
                         <tr style="background-color: rgb(236 254 255);" class="bg-cyan-50">
-                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-6 text-center">2021</td>
-                            <td class="py-3 px-6 text-center">
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-1 md:px-6 text-center">2021</td>
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-1 md:px-6 text-center">Lorem ipsum dolor
+                                sit amet, consectetur adipisicing elit. Aliquid amet cum delectus dolor, dolore ea eum
+                                explicabo maiores modi molestias?
+                            </td>
+                            <td class="py-3 px-1 md:px-6 text-center">
                                 <button style="background-color: rgb(6 182 212);"
                                         class="bg-cyan-500 text-white rounded-full p-1 hover:bg-cyan-600 transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
@@ -289,8 +312,12 @@
                             </td>
                         </tr>
                         <tr style="	background-color: rgb(207 250 254);" class="bg-cyan-100">
-                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-6 text-center">2022</td>
-                            <td class="py-3 px-6 text-center">
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-1 md:px-6 text-center">2022</td>
+                            <td style="border-right: 1px solid #9cacc8;" class="py-3 px-1 md:px-6 text-center">Lorem ipsum dolor
+                                sit amet, consectetur adipisicing elit. Aliquid amet cum delectus dolor, dolore ea eum
+                                explicabo maiores modi molestias?
+                            </td>
+                            <td class="py-3 px-1 md:px-6 text-center">
                                 <button style="background-color: rgb(6 182 212);"
                                         class="bg-cyan-500 text-white rounded-full p-1 hover:bg-cyan-600 transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
@@ -305,17 +332,33 @@
                     </table>
                     <!--    Pagination      -->
                     <div class="flex justify-center space-x-1 dark:text-gray-800">
-                        <button title="previous" type="button" class="inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md">
-                            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="w-4">
+                        <button title="previous" type="button"
+                                class="inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md">
+                            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                                 stroke-linecap="round" stroke-linejoin="round" class="w-4">
                                 <polyline points="15 18 9 12 15 6"></polyline>
                             </svg>
                         </button>
-                        <button style="color: #00b4cb;" type="button" title="Page 1" class="inline-flex items-center justify-center w-8 h-8 text-sm font-semibold border rounded shadow-md dark:bg-gray-50 dark:text-violet-600 dark:border-violet-600">1</button>
-                        <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md" title="Page 2">2</button>
-                        <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md" title="Page 3">3</button>
-                        <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md" title="Page 4">4</button>
-                        <button title="next" type="button" class="inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md">
-                            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="w-4">
+                        <button style="color: #00b4cb;" type="button" title="Page 1"
+                                class="inline-flex items-center justify-center w-8 h-8 text-sm font-semibold border rounded shadow-md dark:bg-gray-50 dark:text-violet-600 dark:border-violet-600">
+                            1
+                        </button>
+                        <button type="button"
+                                class="inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md"
+                                title="Page 2">2
+                        </button>
+                        <button type="button"
+                                class="inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md"
+                                title="Page 3">3
+                        </button>
+                        <button type="button"
+                                class="inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md"
+                                title="Page 4">4
+                        </button>
+                        <button title="next" type="button"
+                                class="inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md">
+                            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                                 stroke-linecap="round" stroke-linejoin="round" class="w-4">
                                 <polyline points="9 18 15 12 9 6"></polyline>
                             </svg>
                         </button>

@@ -8,6 +8,10 @@
       line-height: 48px;
       margin-bottom: 1.8rem;
       text-align: center;
+
+      @media (max-width: 767px) {
+        font-size:  18px;
+      }
     }
     .resources_table{}
   }
