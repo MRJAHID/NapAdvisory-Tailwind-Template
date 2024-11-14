@@ -34,6 +34,7 @@
         <link rel="stylesheet" href="./dist/css/index.css" />
     </head>
     <body class="antialiased">
+
         <!-------- Header || START ---------->
         <header class="header">
             <div class="container mx-auto px-4 xl:px-16">
@@ -95,7 +96,7 @@
                     <!-- Header Button -->
                     <div class="header__btn">
                         <!-- Mobile Menu btn start-->
-                        <div class="header__mobilemenu-btn lg:hidden toggle-menu">
+                        <div class="header__mobilemenu-btn breadcrumb lg:hidden toggle-menu" onclick="toggleMobileMenu()">
                             <a href="#" class=""><i data-feather="menu"></i></a>
                         </div>
                         <!-- Mobile Menu btn end-->
@@ -114,45 +115,211 @@
                 </nav>
             </div>
             <!-- Mobile Menu -->
-            <!-- <nav class="mobile__menu mobile__menu-left">
-                <div class="mobile__menu--head">
-                    <a href="#">
-                        <span>&nbsp;</span>
-                        <span
-                            class="close-menu"
-                            style="border-left: 1px solid #d1d8d8; padding-left: 12px"
-                            ><i data-feather="x" class="arrow-md"></i
-                        ></span>
-                    </a>
+
+            <aside class="mega-menu hidden" id="mega-menu--mobile">
+                <div class="mega__container" data-active-depth="1" data-active-nav="">
+
+                    <div class="mega__header">
+                        <div class="mega__controls">
+                            <button type="button" id="menu-back">
+						<span class="btn__icon">
+							<svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.11745 3.7766C-0.0391497 3.62427 -0.0391497 3.37796 0.11745 3.22725L3.31612 0.11425C3.47272 -0.0380799 3.72595 -0.0380798 3.88088 0.11425C4.03582 0.26657 4.03748 0.51289 3.88088 0.6636L0.96543 3.49949L3.88255 6.33701C4.03915 6.48934 4.03915 6.73565 3.88255 6.88636C3.72595 7.03707 3.47272 7.03869 3.31778 6.88636L0.11745 3.7766Z" fill="#221F20"/>
+							</svg>
+						</span>
+                                <span class="btn__label">Back</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mega__body">
+
+                        <!-- 1 -->
+                        <div class="mega__screen" data-menu-depth="1" data-active-menu="true">
+
+                            <nav class="navigation">
+                                <a href="#" class="btn">
+                                    <span class="btn__label">Home</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+
+                                <a href="#products" class="btn" aria-label="navigation-products">
+                                    <span class="btn__label">Products</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+
+                                <a href="#" class="btn">
+                                    <span class="btn__label">About</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+
+                                <a href="#world" class="btn" aria-label="navigation-world">
+                                    <span class="btn__label">World</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+
+                                <a href="#" class="btn">
+                                    <span class="btn__label">Contact</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+
+                            </nav>
+
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="mega__screen" data-menu-depth="2" data-active-menu="false">
+
+                            <nav class="navigation" aria-labelledby="navigation-world">
+
+                                <a href="#europe" class="btn" aria-label="navigation-world--europe">
+                                    <span class="btn__label">Europe</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+
+                                <a href="#america" class="btn" aria-label="navigation-world--america">
+                                    <span class="btn__label">America</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+
+                            </nav>
+
+                            <nav class="navigation" aria-labelledby="navigation-products">
+
+                                <a href="#lighting" class="btn" aria-label="navigation-products--lighthing">
+                                    <span class="btn__label">LIGHTING & Candles</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+
+                                <a href="#furniture" class="btn" aria-label="navigation-products--furniture">
+                                    <span class="btn__label">FURNITURE & MOVEABLES</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+
+                                <a href="#props" class="btn" aria-label="navigation-products--props">
+                                    <span class="btn__label">PROPS & BACKDROPS</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+                            </nav>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="mega__screen" data-menu-depth="3" data-active-menu="false">
+
+                            <nav class="navigation" aria-labelledby="navigation-world--europe">
+                                <a href="#greece" class="btn" aria-label="navigation-world--greece">
+                                    <span class="btn__label">Greece</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+                                <a href="#" class="btn">
+                                    <span class="btn__label">Cyprus</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+                                <a href="#" class="btn">
+                                    <span class="btn__label">Italy</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+                            </nav>
+
+                            <nav class="navigation" aria-labelledby="navigation-world--america">
+                                <a href="#" class="btn">
+                                    <span class="btn__label">New York</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+                                <a href="#" class="btn">
+                                    <span class="btn__label">California</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+                            </nav>
+
+                            <nav class="navigation" aria-labelledby="navigation-products--lighthing">
+                                <a href="#" class="btn">BATTERY LAMPS</a>
+                                <a href="#" class="btn">BULBS</a>
+                                <a href="#" class="btn">CANDELABRAS</a>
+                                <a href="#" class="btn">CANDLE HOLDERS</a>
+                                <a href="#" class="btn">CHANDELIERS</a>
+                                <a href="#" class="btn">FLOOR LAMPS</a>
+                                <a href="#" class="btn">HANGING LAMPS</a>
+                                <a href="#" class="btn">HANGING LANTERNS</a>
+                                <a href="#" class="btn">HURRICANES</a>
+                                <a href="#" class="btn">BATTERY LAMPS</a>
+                                <a href="#" class="btn">BULBS</a>
+                                <a href="#" class="btn">CANDELABRAS</a>
+                                <a href="#" class="btn">CANDLE HOLDERS</a>
+                                <a href="#" class="btn">CHANDELIERS</a>
+                                <a href="#" class="btn">FLOOR LAMPS</a>
+                                <a href="#" class="btn">HANGING LAMPS</a>
+                                <a href="#" class="btn">HANGING LANTERNS</a>
+                                <a href="#" class="btn">HURRICANES</a>
+                                <a href="#" class="btn">BATTERY LAMPS</a>
+                                <a href="#" class="btn">BULBS</a>
+                                <a href="#" class="btn">CANDELABRAS</a>
+                                <a href="#" class="btn">CANDLE HOLDERS</a>
+                                <a href="#" class="btn">CHANDELIERS</a>
+                                <a href="#" class="btn">FLOOR LAMPS</a>
+                                <a href="#" class="btn">HANGING LAMPS</a>
+                                <a href="#" class="btn">HANGING LANTERNS</a>
+                                <a href="#" class="btn">HURRICANES</a>
+                                <a href="#" class="btn">BATTERY LAMPS</a>
+                                <a href="#" class="btn">BULBS</a>
+                                <a href="#" class="btn">CANDELABRAS</a>
+                                <a href="#" class="btn">CANDLE HOLDERS</a>
+                                <a href="#" class="btn">CHANDELIERS</a>
+                                <a href="#" class="btn">FLOOR LAMPS</a>
+                                <a href="#" class="btn">HANGING LAMPS</a>
+                                <a href="#" class="btn">HANGING LANTERNS</a>
+                                <a href="#" class="btn">HURRICANES</a>
+                            </nav>
+
+                            <nav class="navigation" aria-labelledby="navigation-products--furniture">
+                                <a href="#" class="btn">FLOOR LAMPS</a>
+                                <a href="#" class="btn">HANGING LAMPS</a>
+                                <a href="#" class="btn">HANGING LANTERNS</a>
+                                <a href="#" class="btn">HURRICANES</a>
+                                <a href="#" class="btn">BATTERY LAMPS</a>
+                                <a href="#" class="btn">BULBS</a>
+                                <a href="#" class="btn">CANDELABRAS</a>
+                                <a href="#" class="btn">CANDLE HOLDERS</a>
+                                <a href="#" class="btn">CHANDELIERS</a>
+                                <a href="#" class="btn">FLOOR LAMPS</a>
+                                <a href="#" class="btn">HANGING LAMPS</a>
+                                <a href="#" class="btn">HANGING LANTERNS</a>
+                                <a href="#" class="btn">HURRICANES</a>
+                            </nav>
+
+                            <nav class="navigation" aria-labelledby="navigation-products--props">
+                                <a href="#" class="btn">HANGING LAMPS</a>
+                                <a href="#" class="btn">HANGING LANTERNS</a>
+                                <a href="#" class="btn">HURRICANES</a>
+                            </nav>
+
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="mega__screen" data-menu-depth="4" data-active-menu="false">
+
+                            <nav class="navigation" aria-labelledby="navigation-world--greece">
+                                <a href="#" class="btn">
+                                    <span class="btn__label">Athens</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+                                <a href="#" class="btn">
+                                    <span class="btn__label">Thesalloniki</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+                                <a href="#" class="btn">
+                                    <span class="btn__label">Corfu</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+                                <a href="#" class="btn">
+                                    <span class="btn__label">Crete</span>
+                                    <span class="btn__icon"></span>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-                <div class="mobile__menu--main">
-                    <a href="index.html">
-                        <span>Home</span>
-                        <span><i data-feather="arrow-right" class="arrow-md"></i></span>
-                    </a>
-                    <a href="about-us.html"
-                        ><span>About</span>
-                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
-                    ></a>
-                    <a href="products.html"
-                        ><span>Products</span>
-                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
-                    ></a>
-                    <a href="#"
-                        ><span>Services</span>
-                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
-                    ></a>
-                    <a href="#"
-                        ><span>Clients</span>
-                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
-                    ></a>
-                    <a href="#"
-                        ><span>Contact</span>
-                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
-                    ></a>
-                </div>
-            </nav>
-            <div class="mobile__menu-overlay"></div> -->
+            </aside>
         </header>
         <!---------- Header || END -------------->
 
@@ -204,7 +371,7 @@
         <!---------- HERO SECTION || END -------------->
 
         <!-- ========= Main Content || START =========== -->
-        <main class="py-8 md:py-10">
+        <main class="py-8 md:py-2">
             <!---------- NAP_ACTIVITIES SECTION || START -------------->
             <section class="napactivities py-1 px-3 md:px-5 mx-auto container">
                 <div class="napactivities_container flex flex-col md:flex-row  items-center justify-between w-full">
@@ -668,7 +835,7 @@
                                     >
                                 </li>
                                 <li class="hidden lg:inline-block">
-                                    <a href="mailto:info.nappartners@gmail.com" class="flex"
+                                    <a style="text-transform: lowercase;" href="mailto:info.nappartners@gmail.com" class="flex"
                                     ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
                                     >Email: info.nappartners@gmail.com</a
                                     >

@@ -76,20 +76,25 @@
           background: rgba(243, 244, 246, 1);
           border-radius: 8px;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          padding: 24px;
+          padding: 20px;
           width: auto;
           text-align: center;
+          height: max-content;
 
           .icon {
             font-size: 24px;
-            margin-bottom: 16px;
+            margin-bottom: 10px;
             display: flex;
             justify-content: center;
+            img{
+              max-height: 8rem;
+            }
           }
 
           h2 {
             font-size: 18px;
             margin-bottom: 12px;
+            line-height: 26px;
             color: #333;
           }
 
@@ -112,8 +117,12 @@
             align-items: center;
             text-decoration: none;
             @include transition-sm;
+
             &:hover{
               background-color: $secondary-color-normal_hover;
+              box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+              font-weight: bold;
+              padding: 8px 18px;
             }
           }
         }

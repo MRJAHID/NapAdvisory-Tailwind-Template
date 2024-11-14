@@ -2,6 +2,10 @@
     background-color: white;
     &__nav {
         height: 100px;
+
+        @media (max-width: 500px) {
+            height: 82px;
+        }
     }
     &__social {
         position: relative;
@@ -158,7 +162,7 @@ nav.nav_menu ul li:hover > ul {
 
 /* Fisrt Tier Dropdown */
 nav.nav_menu ul ul li {
-    width: 240px;
+    width: 260px;
     float: none;
     display: list-item;
     position: relative;
@@ -172,7 +176,7 @@ nav.nav_menu ul ul ul {
     position: absolute;
     top: -5px;
     /* has to be the same number as the "width" of "nav.nav_menu ul ul li" */
-    left: 220px;
+    left: 240px;
 }
 
 /* Change ' +' in order to change the Dropdown symbol */
@@ -182,4 +186,127 @@ nav.nav_menu li > a:after {
 
 nav.nav_menu li > a:only-child:after {
     content: '';
+}
+
+
+
+//
+
+
+/***************************/
+/***** Mobile Menu **************/
+/***************************/
+
+
+aside#mega-menu--mobile .mega__container {
+    width: 100%;
+    height: 100svh;
+    max-height: 100svh;
+    //padding-top: var(--height-header, 10px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+aside#mega-menu--mobile .mega__container[data-active-depth="1"] button {
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+aside#mega-menu--mobile .mega__header {
+    height: 40px;
+    padding-inline: var(--padding-container-inline, 20px);
+    background-color: white;
+}
+aside#mega-menu--mobile .mega__header .mega__controls {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+aside#mega-menu--mobile .mega__header .mega__controls button {
+    font-family: var(--ff-sans);
+    font-size: var(--fs-btn);
+    text-transform: uppercase;
+    letter-spacing: var(--ls-200);
+    display: flex;
+    align-items: center;
+    gap: var(--gap-100, 4px);
+    transition: all 300ms ease;
+}
+aside#mega-menu--mobile .mega__header .mega__controls button .btn__icon,
+aside#mega-menu--mobile .mega__header .mega__controls button .btn__label {
+    display: flex;
+    pointer-events: none;
+}
+
+aside#mega-menu--mobile .mega__body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+aside#mega-menu--mobile .mega__screen {
+    padding-block: var(--padding-container-block, 16px);
+    padding-inline: var(--padding-container-inline, 20px);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    transition: all 300ms ease;
+}
+aside#mega-menu--mobile .mega__screen[data-active-menu="false"] {
+    transform: translateX(100%);
+}
+aside#mega-menu--mobile .mega__screen[data-active-menu="false"].stacked,
+aside#mega-menu--mobile .mega__screen[data-active-menu="true"] {
+    transform: translateX(0%);
+}
+
+aside#mega-menu--mobile nav.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-300, 12px);
+}
+aside#mega-menu--mobile nav.navigation a.btn {
+    --item-height: 24px;
+    --icon-size: 12px;
+    width: 100%;
+    font-weight: 400;
+    height: var(--item-height);
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    color: var(--color-text);
+    justify-content: space-between;
+    gap: var(--gap);
+    display: flex;
+}
+aside#mega-menu--mobile nav.navigation a.btn .btn__label {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+aside#mega-menu--mobile nav.navigation a.btn .btn__icon:empty {
+    display: none;
+    pointer-events: none;
+}
+aside#mega-menu--mobile nav.navigation a.btn .btn__icon {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    pointer-events: all;
+}
+aside#mega-menu--mobile nav.navigation a.btn .btn__icon svg {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    pointer-events: none;
 }
