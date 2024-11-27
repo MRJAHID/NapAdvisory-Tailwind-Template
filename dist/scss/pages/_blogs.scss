@@ -11,11 +11,133 @@
     }
     .nap_allblogs-cards{
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column-reverse;
       max-width: 1200px;
       margin-block: 2rem;
       gap: 2rem;
+
+      @media (min-width: 786px) {
+        flex-direction: row-reverse;
+        margin-block: 2rem;
+      }
+
+      .nap_blog_side{
+        .recentpost_card {
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          width: 300px;
+          margin: 15px auto;
+          .categories-title {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            position: relative;
+          }
+          .categories-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 15px;
+            bottom: 15px;
+            width: 4px;
+            background-color: #e91e63;
+          }
+          .post {
+            display: flex;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dotted #ccc;
+          }
+          .post-image {
+             width: 60px;
+             height: 50px;
+             background-color: #e0e0e0;
+             margin-right: 10px;
+            img {
+              height: 100%;
+              width: 100%;
+            }
+           }
+
+          .post-content {
+            flex-grow: 1;
+            .post-title {
+              margin: 0 0 5px 0;
+              font-size: 16px;
+              font-family: 'Manrope', serif;
+              color: #565e6c;
+              line-height: 26px;
+              transition: all 300ms ease-in-out;
+            }
+            .post-date {
+              font-size: 12px;
+              color: #888;
+              text-align: right;
+            }
+          }
+        }
+
+        .categories-container {
+          max-width: 300px;
+          margin: 15px auto;
+          background-color: white;
+          border: 1px solid #e0e0e0;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          .categories-title {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            position: relative;
+          }
+          .categories-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 15px;
+            bottom: 15px;
+            width: 4px;
+            background-color: #e91e63;
+          }
+          .categories-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+          }
+          .category-item {
+            padding: 10px 15px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            .category-name {
+              font-weight: 400;
+              font-size: 16px;
+              font-family: 'Manrope', serif;
+              color: #565e6c;
+              line-height: 27px;
+              transition: all 300ms ease-in-out;
+            }
+            .category-count {
+              color: #888;
+            }
+
+          }
+        }
+      }
+
+      .napblog_single_cards{
+        display: grid;
+        grid-template-columns:  1fr; /* 2 columns of equal width */
+        gap: 10px; /* space between grid items */
+
+        @media (min-width: 786px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
 
       img {
         max-width: 100%;
@@ -26,7 +148,7 @@
       .card {
         display: flex;
         flex-direction: column;
-        width: clamp(20rem, calc(20rem + 2vw), 22rem);
+        //width: clamp(20rem, calc(20rem + 2vw), 22rem);
         overflow: hidden;
         box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
         border-radius: 1em;

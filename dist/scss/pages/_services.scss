@@ -24,16 +24,24 @@
   .services_container {
     .napactivities_text {
       h1 {
-        font-size: 28px;
+        font-size: 22px;
 
+        @media (min-width: 586px) {
+          font-size: 28px;
+        }
       }
 
       h2 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 1.2rem;
         font-family: 'Adamina', serif;
         color: $dark-text-color;
-        line-height: 38px;
+        line-height: 32px;
+
+        @media (min-width: 586px) {
+          font-size: 20px;
+          line-height: 38px;
+        }
       }
 
       p {
@@ -64,8 +72,7 @@
         }
 
         @media (max-width: 586px) {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 12px;
+          grid-template-columns: 1fr;
         }
 
         .services-card-active{
@@ -80,6 +87,8 @@
           width: auto;
           text-align: center;
           height: max-content;
+
+
 
           .icon {
             font-size: 24px;
