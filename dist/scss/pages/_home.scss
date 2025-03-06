@@ -51,8 +51,8 @@
         .nap_strategy-content {
             .nap_strategy-card {
                 background-color: #fff;
-                padding: 18px 22px;
-                border-radius: 8px;
+                padding: 18px 26px;
+                border-radius: 30px;
                 margin-bottom: 6px;
                 margin-top: 6px;
                 h2 {
@@ -96,11 +96,15 @@
         .nap_faq-content {
             h2 {
                 font-weight: 400;
-                font-size: $medium-font-size;
+                font-size: 36px;
                 font-family: 'Adamina', serif;
                 color: $dark-text-color;
                 line-height: 48px;
-                margin-bottom: 10px;
+                margin-bottom: 1rem;
+
+                @media (max-width: 1000px) {
+                    font-size:  $medium-font-size;
+                }
 
                 @media (max-width: 576px) {
                     font-size:  29px;
@@ -157,6 +161,16 @@
                 padding: 0.2em 0.3em 0.2em 0;
                 margin-right: 22px;
                 display: block;
+                font-size:  30px;
+
+                @media (max-width: 1000px) {
+                    font-size:  28px;
+                }
+
+                @media (max-width: 576px) {
+                    font-size:  24px;
+                }
+
             }
 
             .accordion button .icon {
@@ -201,7 +215,7 @@
             }
             .accordion button[aria-expanded='true'] + .accordion-content {
                 opacity: 1;
-                max-height: 9em;
+                max-height: fit-content;
                 transition: all 200ms linear;
                 will-change: opacity, max-height;
             }
@@ -217,6 +231,7 @@
                 font-weight: 400;
                 margin: 2em 0;
                 color: $text-color;
+                line-height: 24px;
             }
         }
     }
@@ -227,23 +242,28 @@
     .nap_reviews-container {
         .nap_reviews-content {
             background-color: $primary-color-normal;
+            border-radius: 70px;
             h2 {
                 font-weight: 400;
-                font-size: $medium-font-size;
+                font-size: 43px;
                 font-family: 'Adamina', serif;
                 color: $dark-text-color;
                 line-height: 48px;
+                margin-bottom: 2rem;
+
+                @media (max-width: 976px) {
+                    font-size: 38px;
+                }
 
                 @media (max-width: 576px) {
                     font-size: 29px;
-                    line-height: 44px;
                 }
             }
 
             .nap_reviews-cards {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                gap: 10px;
+                gap: 16px;
                 transition: transform 0.5s ease-in-out;
 
                 @media (max-width: 650px) {
@@ -257,10 +277,9 @@
                 }
 
                 .nap_reviews-card {
-
                     background-color: #fff;
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                    border-radius: 10px;
+                    border-radius: 30px;
                     padding: 16px;
 
                     img {
