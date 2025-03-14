@@ -75,10 +75,6 @@
           grid-template-columns: 1fr;
         }
 
-        .services-card-active{
-          border: 1px solid $primary-color-normal;
-        }
-
         .services_content-card {
           background: rgba(243, 244, 246, 1);
           border-radius: 8px;
@@ -87,6 +83,16 @@
           width: auto;
           text-align: center;
           height: max-content;
+          min-height: 13rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          @include transition-sm;
+
+          &:hover{
+            border: 1px solid #00b4cb;
+          }
 
 
 
@@ -126,6 +132,7 @@
             align-items: center;
             text-decoration: none;
             @include transition-sm;
+            width: fit-content;
 
             &:hover{
               background-color: $secondary-color-normal_hover;
