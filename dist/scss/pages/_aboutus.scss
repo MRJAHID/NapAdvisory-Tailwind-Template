@@ -1,3 +1,13 @@
+.hero_about{
+  .hero__img{
+    @media (min-width: 1000px) {
+      img{
+        transform: translateX(36px);
+      }
+    }
+  }
+}
+
 .about_us {
   .nap_aboutus_mission {
     background-color: $primary-color-light_active;
