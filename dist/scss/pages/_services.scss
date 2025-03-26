@@ -49,6 +49,16 @@
       }
     }
 
+    .napactivities_img{
+      picture{
+        max-height: 480px;
+        img{
+          object-fit: cover;
+          border-radius: 2rem;
+        }
+      }
+    }
+
     .services_content {
       h2{
         font-family: 'Adamina', serif;
@@ -145,4 +155,10 @@
       }
     }
   }
+}
+
+
+.service_activated{
+  color: $secondary-color-normal !important;
+  font-weight: 500 !important;
 }
