@@ -158,14 +158,14 @@
 
 <!---------- HERO SECTION || START -------------->
 <section class="relative mb-6 hero">
-    <div class="mx-auto">
-        <div class="flex flex-col-reverse items-center justify-start hero__banner py-8 lg:py-12 lg:flex-row">
+    <div class="mx-auto container">
+        <div class="flex flex-col-reverse items-center justify-start hero__banner lg:flex-row">
             <!-- Hero Text Content -->
             <div class="w-full lg:w-1/2 hero__txt px-12 md:pl-24 md:pr-2">
-                <div class="hero__text-content">
+                <div class="hero__text-content md:py-8">
                     <!-- Short Breadcrumb Title : START -->
                     <div class="short_breadcrumb">
-                            <span>
+                            <span style="background-color: #353299;">
                                 <i class="ft-help-circle"></i>
                             </span>
                         <span>Resources</span>
@@ -177,7 +177,7 @@
                         <li>
                             <a href="#">TDS & VDS Rate</a>
                         </li>
-                        <li>
+                        <li class="service_activated">
                             <a href="#">Finance ACT</a>
                         </li>
                         <li>
@@ -191,11 +191,11 @@
             </div>
 
             <!-- Hero Image -->
-            <div class="w-full lg:w-1/2 hero__img px-4 md:pr-24 md:pl-2">
+            <div class="w-full lg:w-1/2 hero__img px-4 md:px-6">
                 <div class="hero__banner-img py-4 md:py-0">
                     <img style="border-radius: 20px"
                             class="animate__animated animate__fadeInUpBig"
-                            src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src="https://images.pexels.com/photos/207662/pexels-photo-207662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Hero Image"
                     />
                 </div>
@@ -381,9 +381,19 @@
             <div class="w-full md:w-1/4">
                 <img
                         src="./dist/images/logo2.png"
-                        class="py-8 footer__logo"
+                        class="pt-8 pb-2 footer__logo"
                         alt="Footer Logo"
                 />
+                <div class="footer_signup-container pr-8 pt-2 pl-0 pb-4">
+                    <h2>Join With Us</h2>
+                    <form class="input-group">
+                        <input type="email" placeholder="Input your email">
+                        <button type="submit" class="send-button">
+                            <span>Send</span>
+                            <div class="arrow"></div>
+                        </button>
+                    </form>
+                </div>
                 <p class="font-medium text-gray-100 py-2 footer__para">
                     “Your business, Our expertise”
                 </p>
@@ -485,7 +495,7 @@
                             >
                         </li>
                         <li class="hidden lg:inline-block">
-                            <a href="mailto:info.nappartners@gmail.com" class="flex"
+                            <a style="text-transform: lowercase;" href="mailto:info.nappartners@gmail.com" class="flex"
                             ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
                             >Email: info.nappartners@gmail.com</a
                             >

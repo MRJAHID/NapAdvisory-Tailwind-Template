@@ -1,14 +1,25 @@
 .hero {
     background-color: $primary-color-normal;
     .hero__banner {
+        position: relative;
         img {
-            border-radius: 0 10px 10px 0;
+            border-radius: 40px;
             width: 100%;
-            
+
             @media (max-width: 576px) {
                 border-radius:  0;
             }
         }
+
+        .hero__img{
+
+
+            .hero__banner-img {
+
+            }
+        }
+
+
         .hero__txt{
             @media (min-width: 577px) and (max-width: 1023px) {
                 padding-top: 12px;
@@ -41,7 +52,7 @@
             label {
                 background: #fff;
                 border-radius: 3px;
-                padding: 2px 12px;
+                padding: 5px 13px;
                 font-size: $body-font-size;
                 color: $primary-color-normal;
                 margin-bottom: 6px;
