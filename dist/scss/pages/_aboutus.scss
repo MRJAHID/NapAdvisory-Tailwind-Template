@@ -10,8 +10,12 @@
 
 .about_us {
   .nap_aboutus_mission {
-    background-color: $primary-color-light_active;
-    border-radius: 60px;
+
+
+    .napactivities_container{
+      background-color: $primary-color-light_active;
+      border-radius: 60px;
+    }
 
     .napactivities_text {
       h1 {
